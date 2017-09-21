@@ -1,0 +1,16 @@
+DirectoryIndex index.php index.html index.htm
+
+Options +SymLinksIfOwnerMatch
+RewriteEngine On
+
+# редирект с index.html на папку
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ http://igadget.me/ [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /opt/index\.html\ HTTP/
+RewriteRule ^opt/index\.html$ http://igadget.me/opt/ [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /magnetic/index\.html\ HTTP/
+RewriteRule ^magnetic/index\.html$ http://igadget.me/magnetic/ [R=301,L]
+
+# несколько слешей в конце
+RewriteCond %{THE_REQUEST} \s/+(.*?)/{2,}([^\s]*)
+RewriteRule ^ %1/%2 [R=301,L,NE]

@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /seo-files/*
+Disallow: /evista/*
+Disallow: /evista_old/*
+Disallow: /phones_old/*
+Disallow: /js/ouibounce-master.rar
+Disallow: /js/ouibounce.js
+Disallow: /img/*

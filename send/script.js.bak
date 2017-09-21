@@ -1,0 +1,195 @@
+$(document).ready(function() {
+
+$('#send1').click(function(){
+				// собираем данные с формы
+				var form_username1 	 = $('#form-username1').val();
+				var form_phone1 	 = $('#form-phone1').val();
+				// отправляем данные
+				$.ajax({
+					url: "/send/send1.php", // куда отправляем
+					type: "post", // метод передачи
+					dataType: "json", // тип передачи данных
+					data: { // что отправляем
+						"form_username1": 	form_username1,
+						"form_phone1": 	form_phone1,
+					},
+					// после получения ответа сервера
+					success: function(data){
+						if(data.result=='ok'){
+						window.location.replace("/thankyou/index.html");	
+						} else {
+						$('.messages1').html(data.result);
+						}
+					}
+				});
+			});	
+			
+$('#send2').click(function(){
+				// собираем данные с формы
+				var form_username2 	 = $('#form-username2').val();
+				var form_phone2 	 = $('#form-tel2').val();
+				var form_email2 	 = $('#form-email2').val();
+				// отправляем данные
+				$.ajax({
+					url: "/send/send2.php", // куда отправляем
+					type: "post", // метод передачи
+					dataType: "json", // тип передачи данных
+					data: { // что отправляем
+						"form_username2": 	form_username2,
+						"form_phone2": 	form_phone2,
+						"form_email2": 	form_email2,
+					},
+					// после получения ответа сервера
+					success: function(data){
+						if(data.result=='ok'){
+						window.location.replace("/thankyou/index.html");	
+						} else {
+						$('.messages2').html(data.result);
+						}
+					}
+				});
+			});	
+
+			$('#send3').click(function(){
+				// собираем данные с формы
+				var form_username3 	 = $('#form-username3').val();
+				var form_phone3 	 = $('#form-phone3').val();
+				var form_email3 	 = $('#form-email3').val();
+				var form_product1 	 = $('#form-product1').val();
+				// отправляем данные
+				$.ajax({
+					url: "/send/send3.php", // куда отправляем
+					type: "post", // метод передачи
+					dataType: "json", // тип передачи данных
+					data: { // что отправляем
+						"form_username3": 	form_username3,
+						"form_phone3": 	form_phone3,
+						"form_email3": 	form_email3,
+						"form_product1": 	form_product1,
+					},
+					// после получения ответа сервера
+					success: function(data){
+						if(data.result=='ok'){
+						window.location.replace("/thankyou/index.html");	
+						} else {
+						$('.messages3').html(data.result);
+						}
+					}
+				});
+			});	
+			
+			$('#send4').click(function(){
+				// собираем данные с формы
+				var form_username3 	 = $('#form-username4').val();
+				var form_phone3 	 = $('#form-phone4').val();
+				var form_email3 	 = $('#form-email4').val();
+				var form_product1 	 = $('#form-product2').val();
+				// отправляем данные
+				$.ajax({
+					url: "/send/send3.php", // куда отправляем
+					type: "post", // метод передачи
+					dataType: "json", // тип передачи данных
+					data: { // что отправляем
+						"form_username3": 	form_username3,
+						"form_phone3": 	form_phone3,
+						"form_email3": 	form_email3,
+						"form_product1": 	form_product1,
+					},
+					// после получения ответа сервера
+					success: function(data){
+						if(data.result=='ok'){
+						window.location.replace("/thankyou/index.html");	
+						} else {
+						$('.messages4').html(data.result);
+						}
+					}
+				});
+			});	
+	
+
+$('#send5').click(function(){
+				// собираем данные с формы
+				var form_username2 	 = $('#name2').val();
+				var form_phone2 	 = $('#phone2').val();
+				var form_email2 	 = $('#email2').val();
+				// отправляем данные
+				$.ajax({
+					url: "/send/send5.php", // куда отправляем
+					type: "post", // метод передачи
+					dataType: "json", // тип передачи данных
+					data: { // что отправляем
+						"form_username2": 	form_username2,
+						"form_phone2": 	form_phone2,
+						"form_email2": 	form_email2,
+					},
+					// после получения ответа сервера
+					success: function(data){
+						if(data.result=='ok'){
+						window.location.replace("/thankyou/index.html");	
+						} else {
+						$('.messages5').html(data.result);
+						}
+					}
+				});
+			});
+
+
+
+	
+$('#send6').click(function(){
+				// собираем данные с формы
+				var form_username2 	 = $('#form-username6').val();
+				var form_phone2 	 = $('#form-tel6').val();
+				var form_email2 	 = $('#form-email6').val();
+				// отправляем данные
+				$.ajax({
+					url: "/send/send2.php", // куда отправляем
+					type: "post", // метод передачи
+					dataType: "json", // тип передачи данных
+					data: { // что отправляем
+						"form_username2": 	form_username2,
+						"form_phone2": 	form_phone2,
+						"form_email2": 	form_email2,
+					},
+					// после получения ответа сервера
+					success: function(data){
+						if(data.result=='ok'){
+						window.location.replace("/thankyou/index.html");	
+						} else {
+						$('.messages6').html(data.result);
+						}
+					}
+				});
+			});				
+			
+			
+			
+			
+$('#send_comment').click(function(){
+				// собираем данные с формы
+				var usr1 	 = $('#usr1').val();
+				var phone1 	 = $('#phone1').val();
+				var comment1 	 = $('#comment1').val();
+				// отправляем данные
+				$.ajax({
+					url: "/send/send4.php", // куда отправляем
+					type: "post", // метод передачи
+					dataType: "json", // тип передачи данных
+					data: { // что отправляем
+						"usr1": 	usr1,
+						"phone1": 	phone1,
+						"comment1": 	comment1,
+					},
+					// после получения ответа сервера
+					success: function(data){
+						if(data.result=='ok'){
+						window.location.replace("/thankyou/index.html");	
+						} else {
+						$('.messages5').html(data.result);
+						}
+					}
+				});
+			});				
+			
+	
+});

@@ -1,0 +1,13 @@
+{
+  "name": "igadget-static-server",
+  "version": "1.0.0",
+  "description": "Server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.1.6"
+  }
+}

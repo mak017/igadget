@@ -1,0 +1,2496 @@
+@font-face {
+    font-family: 'Solomon Sans Normal';
+    src: url('fonts/SolomonSansNormal.eot');
+    src: url('fonts/SolomonSansNormal.eot') format('embedded-opentype'), url('fonts/SolomonSansNormal.woff2') format('woff2'), url('fonts/SolomonSansNormal.woff') format('woff'), url('fonts/SolomonSansNormal.ttf') format('truetype'), url('fonts/SolomonSansNormal.svg#SolomonSansNormal') format('svg');
+}
+
+@font-face {
+    font-family: 'Solomon Sans Thin';
+    src: url('fonts/SolomonSansThin.eot');
+    src: url('fonts/SolomonSansThin.eot') format('embedded-opentype'), url('fonts/SolomonSansThin.woff2') format('woff2'), url('fonts/SolomonSansThin.woff') format('woff'), url('fonts/SolomonSansThin.ttf') format('truetype'), url('fonts/SolomonSansThin.svg#SolomonSansThin') format('svg');
+}
+
+@font-face {
+    font-family: 'Solomon Sans Light';
+    src: url('fonts/SolomonSansLight.eot');
+    src: url('fonts/SolomonSansLight.eot') format('embedded-opentype'), url('fonts/SolomonSansLight.woff2') format('woff2'), url('fonts/SolomonSansLight.woff') format('woff'), url('fonts/SolomonSansLight.ttf') format('truetype'), url('fonts/SolomonSansLight.svg#SolomonSansLight') format('svg');
+}
+
+@font-face {
+    font-family: 'Solomon Sans Book';
+    src: url('fonts/SolomonSansBook.eot');
+    src: url('fonts/SolomonSansBook.eot') format('embedded-opentype'), url('fonts/SolomonSansBook.woff2') format('woff2'), url('fonts/SolomonSansBook.woff') format('woff'), url('fonts/SolomonSansBook.ttf') format('truetype'), url('fonts/SolomonSansBook.svg#SolomonSansBook') format('svg');
+}
+
+@font-face {
+    font-family: 'Solomon Sans Bold';
+    src: url('fonts/SolomonSansBold.eot');
+    src: url('fonts/SolomonSansBold.eot') format('embedded-opentype'), url('fonts/SolomonSansBold.woff2') format('woff2'), url('fonts/SolomonSansBold.woff') format('woff'), url('fonts/SolomonSansBold.ttf') format('truetype'), url('fonts/SolomonSansBold.svg#SolomonSansBold') format('svg');
+}
+
+@font-face {
+    font-family: 'Solomon Sans SemiBold';
+    src: url('fonts/SolomonSansSemiBold.eot');
+    src: url('fonts/SolomonSansSemiBold.eot') format('embedded-opentype'), url('fonts/SolomonSansSemiBold.woff2') format('woff2'), url('fonts/SolomonSansSemiBold.woff') format('woff'), url('fonts/SolomonSansSemiBold.ttf') format('truetype'), url('fonts/SolomonSansSemiBold.svg#SolomonSansSemiBold') format('svg');
+}
+
+@font-face {
+    font-family: 'Solomon Sans Black';
+    src: url('fonts/SolomonSansBlack.eot');
+    src: url('fonts/SolomonSansBlack.eot') format('embedded-opentype'), url('fonts/SolomonSansBlack.woff2') format('woff2'), url('fonts/SolomonSansBlack.woff') format('woff'), url('fonts/SolomonSansBlack.ttf') format('truetype'), url('fonts/SolomonSansBlack.svg#SolomonSansBlack') format('svg');
+}
+
+
+/* html {
+    overflow-x: hidden;
+} */
+
+body {
+    font-family: "Solomon Sans Normal";
+    color: #3d3d3c;
+    overflow-x: hidden;
+}
+
+#scrollup {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    display: none;
+    cursor: pointer;
+    opacity: 0.35;
+    z-index: 999;
+}
+
+.slidebox {
+    width: 400px;
+    height: 115px;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+    left: -430px;
+    margin: 25px;
+    z-index: 10;
+    box-shadow: -5px 0px 25px rgba(175, 175, 175, 0.83);
+    -moz-box-shadow: -5px 0px 25px rgba(175, 175, 175, 0.83);
+    -webkit-box-shadow: 5px 5px 30px rgb(169, 169, 169);
+}
+
+.green-theme .slidebox {
+    background-color: rgba(44, 169, 67, 0.92);
+}
+
+.red-theme .slidebox {
+    background-color: rgb(223, 48, 34);
+}
+
+.slidebox.magnetic {
+    height: 100px;
+}
+
+h1.h1-magnetic {
+    color: #fff;
+    font-family: 'Solomon Sans Bold';
+    margin-bottom: 20px;
+}
+
+.p-below-h1-magnetic {
+    color: #fff;
+    font-size: 16px;
+}
+
+.p-below-nagrada {
+    color: #fff;
+    font-family: 'Solomon Sans Normal';
+    font-size: 9px;
+    margin-top: 3px;
+}
+
+.skidka-normal {
+    font-family: 'Solomon Sans SemiBold';
+    color: #df3022;
+}
+
+.left-main-block-magnetic {
+    padding-left: 70px;
+    padding-top: 50px;
+}
+
+.right-main-block-magnetic {
+    padding-top: 385px;
+    padding-left: 400px;
+}
+
+span.semibold,
+p.semibold {
+    font-family: 'Solomon Sans SemiBold';
+}
+
+.p-below-p-below-h1-magnetic {
+    font-family: 'Solomon Sans SemiBold';
+    color: #fff;
+    font-size: 16px;
+}
+
+p.p-inside-slidebox {
+    font-size: 20px;
+}
+
+#section1,
+#section2,
+#section3,
+#section4,
+#section5 {
+    padding-top: 50px
+}
+
+.navbar-brand-solomon {
+    font-size: 40px;
+    font-family: "Solomon Sans Black";
+}
+
+a.navbar-brand-solomon {
+    color: #3d3d3c;
+}
+
+.navbar {
+    margin-bottom: 0;
+    z-index: 5;
+}
+
+.navbar-solomon {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.navbar-solomon-li {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.navbar-toggle {
+    border-width: 2px;
+    border-style: solid;
+}
+
+.green-theme .navbar-toggle {
+    border-color: #2ca942;
+}
+
+.red-theme .navbar-toggle {
+    border-color: #df3022;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #3d3d3c;
+}
+
+.span-brand-solomon {
+    margin-right: 2px
+}
+
+.green-theme .span-brand-solomon {
+    color: #2ca942;
+}
+
+.red-theme .span-brand-solomon {
+    color: #df3022;
+}
+
+ul.navbar-solomon-li a {
+    color: #3d3d3c;
+}
+
+.nav>li>a:hover {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.nav>li>a:not(:hover) {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.grey {
+    background-color: #f2f2f2
+}
+
+p.jumbo-main-logo {
+    font-size: 38px;
+    font-family: 'Solomon Sans Light';
+    margin: 30px 0;
+}
+
+p.solomon-light,
+a.solomon-light,
+span.solomon-light {
+    font-family: 'Solomon Sans Book';
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.super-options {
+    color: #df3022;
+    font-family: 'Solomon Sans Normal';
+}
+
+.margin-super-opt {
+    margin-bottom: -5px;
+}
+
+.block-1 {
+    margin-left: -430px;
+}
+
+.block-2 {
+    margin-left: -330px;
+    margin-top: 20px;
+}
+
+.block-3 {
+    margin-left: -230px;
+    margin-top: 40px;
+}
+
+.block-4 {
+    margin-left: -130px;
+    margin-top: 20px;
+}
+
+#super-opt {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.phone-logo-margin {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.phone-main-banner {
+    position: relative;
+    display: block;
+    margin-left: -120px;
+}
+
+.main-logo-margin .item p {
+    margin-top: -30px;
+    font-family: 'Solomon Sans Light';
+    font-size: 20px;
+    text-align: center;
+}
+
+.main-logo-margin .item.main p {
+    margin-top: 0;
+}
+
+.main-logo-margin .item p span {
+    font-family: 'Solomon Sans Normal';
+}
+
+.above-button {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.below-button {
+    margin-top: 20px;
+    color: #ff0000;
+    font-size: 16px;
+}
+
+p.jumbo,
+h2.jumbo {
+    font-size: 36px;
+    font-family: 'Solomon Sans Light';
+    text-align: center;
+}
+
+.jumbo span {
+    font-family: 'Solomon Sans Semibold';
+}
+
+.background-black {
+    position: relative;
+    background-color: #232323;
+    background-image: linear-gradient(145deg, rgb(64,64,64) 0%, rgb(32,32,32) 31%, rgb(43,43,43) 77%, rgb(40,40,40) 100%);
+    color: #fff;
+}
+
+.background-black .modal {
+    color: #3d3d3c;
+}
+
+.main-logo-margin .background-black {
+    background-image: url("../phones/photo_background.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.display-none {
+    display: none;
+}
+
+.magnetic-info .background-black {
+    margin-top: 30px;
+}
+
+p.margin-best {
+    margin-top: 40px;
+}
+
+.mag-1 {
+    display: block;
+    border: 1px solid #df3022;
+    padding-left: 15px;
+    margin-left: -15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 50px;
+}
+
+.mag-padding-left {
+    padding-left: 80px;
+}
+
+.mag-margin-top1 {
+    margin-top: 130px;
+}
+
+.mag-margin-top2 {
+    margin-top: 40px;
+}
+
+.mag-margin-top3 {
+    margin-top: -15px;
+}
+
+.mag-margin-top4 {
+    margin-top: 50px;
+}
+
+.xiaomi-trubka {
+    margin-top: -180px;
+    margin-left: -77px;
+    margin-bottom: -120px;
+}
+
+.font-24 {
+    font-size: 24px;
+}
+
+p#setka {
+    padding: 0 0 15px 0;
+}
+
+.visa-mastercard {
+    width: 33%;
+}
+
+p.setka2 {
+    padding: 55px 0 0 0;
+}
+
+.green-theme p.setka2 {
+    color: #278c38;
+}
+
+.red-theme p.setka2 {
+    color: #df3022;
+}
+
+p#setka3 {
+    padding: 55px 0 30px 0;
+}
+
+p#setka4 {
+    padding: 30px 0 50px 0;
+}
+
+p.text-above-bonus {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Solomon Sans SemiBold';
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.product-title {
+    height: 75px;
+    font-size: 18px;
+}
+
+.text-below-zaryadka {
+    font-family: 'Solomon Sans SemiBold';
+    font-size: 18px;
+}
+
+span.text-below-powerbank {
+    font-family: 'Solomon Sans SemiBold';
+    font-size: 18px;
+}
+
+.photo-center {
+    display: block;
+    margin: 20px auto;
+}
+
+.margin-photo-magnetic {
+    margin-bottom: 40px;
+}
+
+p.text-above-photo {
+    font-size: 18px;
+    font-family: 'Solomon Sans Light';
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.xiaomi-trubka-mobile {
+    display: none;
+}
+
+p.p-below-jumbo {
+    margin-top: -10px;
+    font-size: 13px;
+}
+
+.text-above-setka {
+    font-size: 24px;
+    margin: 15px 0 40px;
+}
+
+.block-divider {
+    padding: 30px 0;
+    font-family: 'Solomon Sans Light';
+    font-size: 36px;
+}
+
+.dark-grey {
+    padding: 30px 0;
+    background-color: #ddd;
+}
+
+p.dark-grey {
+    color: #3d3d3c;
+    font-family: 'Solomon Sans Light';
+    font-size: 36px;
+}
+
+.big-margin {
+    margin: 0 0 60px 0;
+}
+
+.four-types {
+    /* margin-top: 50px; */
+}
+
+.four-type-item {
+    font-size: 24px;
+    font-family: 'Solomon Sans Normal';
+}
+
+.garanty-text {
+    font-size: 24px;
+    font-family: 'Solomon Sans Normal';
+}
+
+.p-below-garanty-text {
+    margin-top: 8px;
+}
+
+.p-below-four-type-item {
+    margin-bottom: 17px;
+}
+
+.visa-margin-bottom {
+    margin-top: 20px;
+}
+
+.main-logo-margin {
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.main-logo-margin .subtitle {
+    font-size: 20px;
+}
+
+.main-logo-margin .below-button {
+    margin-top: 0;
+}
+
+.main-logo-margin .btn-buy-universal {
+    display: inline-block;
+    width: 85%;
+    margin-top: 20px;
+    padding: 14px 22px;
+}
+
+.main-logo-margin .btn-buy-universal::after {
+    content: none;
+}
+
+.magnetic .main-logo-margin {
+    margin-top: 70px;
+}
+
+.garanty-text-side {
+    padding-top: 75px;
+}
+
+.p-above-button-standart {
+    margin-top: 10px;
+}
+
+.below-krug {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+p#garanty-jumbo {
+    margin: 30px 0;
+    color: #f00;
+}
+
+.car {
+    margin-top: 75px;
+}
+
+img#garanty-img {
+    margin: 0 auto;
+}
+
+.mag-padding-left22 {
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+.mag-margin-top22 {
+    margin-top: 25px;
+}
+
+.p-2phones-2receivers {
+    padding-left: 10px;
+}
+
+.four-types-text-colomn {
+    padding-right: 75px;
+}
+
+.p-below-2phones-2receivers {
+    margin: 30px 0 50px 0;
+}
+
+.garanty-div {
+    padding-bottom: 40px;
+}
+
+.margin-2phones-2receivers {
+    margin-top: 40px;
+}
+
+.padding-2phones-2receivers {
+    padding-top: 100px;
+}
+
+.p-below-types {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+p#zakaz {
+    margin: 40px 0;
+}
+
+img#zakaz {
+    margin: 0 auto;
+}
+
+div#dostavka {
+    margin-top: 40px;
+    padding-bottom: 80px;
+}
+
+.margin-bottom-setka {
+    margin-bottom: 30px;
+}
+
+p#dostavka {
+    padding: 40px 0;
+}
+
+p#voprosy {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.dostavka_name {
+    font-size: 24px;
+    font-family: 'Solomon Sans Normal';
+    padding-right: 25px;
+}
+
+.answers {
+    padding-bottom: 70px;
+}
+
+.answers.background-black {
+    margin-top: 30px;
+}
+
+.padding-150,
+.padding-160 {
+    padding-left: 150px;
+}
+
+.p-below-dostavka-name {
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+
+.setka-with-margin {
+    margin-bottom: 50px;
+}
+
+.magnetic-how-to .background-black3 {
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.background-black.delivery {
+    margin-top: 60px;
+    padding-bottom: 80px;
+}
+
+.padding-podval {
+    padding-left: 30px
+}
+
+div#div-with-low-bottom-margin {
+    margin: 40px 0 20px 0;
+}
+
+p#text-above-powerbank.big-margin {
+    margin: 50px 0 35px 0;
+}
+
+.powerbank-button-below {
+    margin-top: 47px;
+}
+
+.autocharger-button-below {
+    margin: 47px auto 0;
+    float: none;
+    text-align: center;
+}
+
+p#powerbank-text-below-font-12 {
+    margin: 50px 0 0 0;
+}
+
+.photo-grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.photo-grayscale:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -webkit-box-shadow: -3px 9px 70px 1px rgba(179, 179, 179, 0.66);
+    box-shadow: -3px 9px 70px 1px rgba(179, 179, 179, 0.66);
+    cursor: pointer;
+    -webkit-transition: All 0.2s linear;
+    transition: All 0.2s linear;
+}
+
+.photo-grayscale:not(:hover) {
+    -webkit-transition: All 0.2s linear;
+    transition: All 0.2s linear;
+}
+
+.youtube-shadow {
+    -webkit-box-shadow: -3px 9px 70px 1px rgba(140, 140, 140, 0.66);
+    box-shadow: -3px 9px 70px 1px rgba(140, 140, 140, 0.66);
+    margin: 0 0 60px 0;
+}
+
+.youtube-shadow:hover {
+    -webkit-box-shadow: -3px 9px 70px 1px rgba(100, 100, 100, 1);
+    box-shadow: -3px 9px 70px 1px rgba(100, 100, 100, 1);
+    -webkit-transition: All 0.2s linear;
+    transition: All 0.2s linear;
+}
+
+.youtube-shadow:not(:hover) {
+    -webkit-box-shadow: -3px 9px 70px 1px rgba(140, 140, 140, 0.66);
+    box-shadow: -3px 9px 70px 1px rgba(140, 140, 140, 0.66);
+    -webkit-transition: All 0.3s linear;
+    transition: All 0.3s linear;
+}
+
+.youtube-iframe {
+    border: 1px solid rgba(14, 9, 9, 0.45);
+    width: "853px";
+    height: "auto";
+}
+
+.mouse-button {
+    border-width: 1.652px;
+    border-color: #c2c2c2;
+    border-style: solid;
+    width: 10px;
+    z-index: 44;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 25px;
+}
+
+a.mouse-body {
+    width: 40px;
+    border-radius: 28px;
+    font-size: 30px;
+    padding: 12px 20px 12px 20px;
+    border: solid #c2c2c2 2px;
+    background-color: transparent;
+    margin: 20px auto 0px auto;
+    display: block;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+a.mouse-body:hover {
+    background-color: #f3f3f3;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+a.mouse-body:not(:hover) {
+    background-color: transparent;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+a.mouse-body:focus {
+    outline: none;
+}
+
+.mouse-text {
+    font-size: 13px;
+    font-family: "Solomon Sans Normal";
+    color: #c2c2c2;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+button.btn777 {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 4px;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+}
+
+.green-theme button.btn777 {
+    background-color: #2ca942;
+}
+
+.red-theme button.btn777 {
+    background-color: #df3022;
+}
+
+button.btn777:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.green-theme button.btn777:hover {
+    background-color: #278c38;
+}
+
+.red-theme button.btn777:hover {
+    background-color: #aa2015;
+}
+
+.btn9090 {
+    border-radius: 40px;
+    color: #000;
+    font-size: 14px;
+    border-style: solid;
+    background-color: transparent;
+    padding: 7px 21px;
+    border-width: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-transition: background-color .3s linear, color .3s linear;
+    transition: background-color .3s linear, color .3s linear;
+}
+
+.green-theme .btn9090 {
+    border-color: #2ca942;
+}
+
+.red-theme .btn9090 {
+    border-color: #df3022;
+}
+
+.background-black .btn9090 {
+    color: #fff;
+}
+
+.btn9090:hover {
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: background-color .4s ease, color .4s ease;
+    transition: background-color .4s ease, color .4s ease;
+}
+
+.green-theme .btn9090:hover {
+    background-color: #2ca942;
+}
+
+.red-theme .btn9090:hover {
+    background-color: #df3022;
+}
+
+.btn122 {
+    border-radius: 25px;
+    font-size: 14px;
+    background: #fff;
+    padding: 10px;
+    border: solid 2px transparent;
+    text-decoration: none;
+    margin-top: 3px;
+    -webkit-transition: background-color .4s ease, color .4s ease;
+    transition: background-color .4s ease, color .4s ease;
+}
+
+.green-theme .btn122 {
+    border-color: #2ca942;
+    color: #2ca942;
+}
+
+.red-theme .btn122 {
+    border-color: #df3022;
+    color: #df3022;
+}
+
+.btn122:hover {
+    text-decoration: none;
+    -webkit-transition: background-color .4s ease, color .4s ease;
+    transition: background-color .4s ease, color .4s ease;
+    color: #fff;
+}
+
+.green-theme .btn122:hover {
+    background-color: #2ca942;
+}
+
+.red-theme .btn122:hover {
+    border-color: transparent;
+    background-color: #aa2015;
+}
+
+.btn122:focus {
+    outline: none;
+}
+
+.btn122.inverse {
+    border-color: transparent;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.green-theme .btn122.inverse {
+    background-color: #2ca942;
+}
+
+.red-theme .btn122.inverse {
+    background-color: #df3022;
+}
+
+.green-theme .btn122.inverse:hover {
+    background-color: #278c38;
+}
+
+.red-theme .btn122.inverse:hover {
+    background-color: #aa2015;
+}
+
+.btn-buy {
+    font-size: 24px;
+    border: solid 1px transparent;
+    border-radius: 50px;
+    color: #fff;
+    -webkit-transition: background-color .6s ease, box-shadow .6s ease, color .6s ease, top .6s ease;
+    -webkit-transition: background-color .6s ease, color .6s ease, top .6s ease, -webkit-box-shadow .6s ease;
+    transition: background-color .6s ease, color .6s ease, top .6s ease, -webkit-box-shadow .6s ease;
+    transition: background-color .6s ease, box-shadow .6s ease, color .6s ease, top .6s ease;
+    transition: background-color .6s ease, box-shadow .6s ease, color .6s ease, top .6s ease, -webkit-box-shadow .6s ease;
+    position: relative;
+    display: block;
+    margin: 10px auto;
+}
+
+.green-theme .btn-buy {
+    background-color: #2ca943;
+    -webkit-box-shadow: 0 2px #278c38;
+    box-shadow: 0 2px #278c38;
+}
+
+.red-theme .btn-buy {
+    background-color: #df3022;
+    -webkit-box-shadow: 0 2px #aa2015;
+    box-shadow: 0 2px #aa2015;
+}
+
+.btn-buy:active {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    top: 2px;
+}
+
+.btn-buy:hover {
+    color: #fff;
+}
+
+.green-theme .btn-buy:hover {
+    background-color: #2ca943;
+}
+
+.red-theme .btn-buy:hover {
+    background-color: #aa2015;
+}
+
+.btn-buy:focus {
+    outline: none;
+}
+
+.btn-buy.discount {
+    padding: 14px 130px 14px 30px;
+}
+
+.btn-buy.discount::after {
+    background: #fff;
+    z-index: 2;
+    border-radius: 0px 50px 50px 0px;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    line-height: 2.7;
+    width: 100px;
+    content: "-20%";
+    padding-right: 5px;
+}
+
+.green-theme .btn-buy.discount::after {
+    color: #2ca943;
+}
+
+.red-theme .btn-buy.discount::after {
+    color: #df3022;
+}
+
+.btn-fast-zakaz {
+    padding: 14px 40px;
+    display: inline-block;
+    margin: 40px 0 60px 0;
+}
+
+.red-theme .btn-fast-zakaz {
+    border-color: #aa2015;
+}
+
+.btn-fast-zakaz:hover {
+    text-decoration: none;
+}
+
+.btn-fast-zakaz:focus {
+    text-decoration: none;
+}
+
+.btn-buy-universal {
+    text-align: center;
+    padding: 14px 122px 14px 22px;
+    margin: 0 auto;
+}
+
+.btn-buy-universal:hover {
+    text-decoration: none;
+}
+
+.green-theme .btn-buy-universal:hover {
+    background-color: #278c38;
+}
+
+.btn-buy-universal:after {
+    content: "до -35%";
+}
+
+.btn-buy-standart.discount,
+.btn-buy-fantasy.discount {
+    padding: 14px 120px 14px 30px;
+    margin: 40px auto 0 auto;
+}
+
+.green-theme .btn-buy-standart:hover,
+.green-theme .btn-buy-fantasy:hover {
+    background: #278c38;
+}
+
+.btn-buy-standart:after {
+    width: 90px;
+    content: "-35%";
+}
+
+.btn-buy-fantasy:after {
+    width: 90px;
+}
+
+.btn-buy-powerbank {
+    margin: 130px auto 70px auto;
+}
+
+.btn-buy-powerbank:hover {
+    background-color: #278c38;
+}
+
+.btn-buy-powerbank:after {
+    width: 115px;
+    content: "до -20%";
+}
+
+.btn-buy.autocharger {
+    margin: 70px auto;
+    padding: 14px 30px;
+}
+
+.btn-buy.together {
+    font-size: 14px;
+    padding: 13px 14% 13px 6px;
+}
+
+.btn-buy.together::after {
+    width: 30%;
+    line-height: 3.3;
+}
+
+.btn-buy.standart_black_powerbank::after,
+.btn-buy.fantasy_gold_powerbank::after {
+    content: '-15%';
+}
+
+.btn-buy-voprosy {
+    padding: 14px 212px;
+    margin: 0 auto;
+}
+
+.green-theme .btn-buy-voprosy:hover {
+    background-color: #278c38;
+}
+
+button.accordion {
+    background-color: #e6e6e6;
+    color: #444;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 22px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-left: 2px solid #e6e6e6;
+}
+
+button.accordion.active,
+button.accordion:hover {
+    background-color: #d0d0d0;
+    padding: 16px 20px;
+    border-left-width: 5px solid;
+    border-left-style: solid;
+}
+
+.green-theme button.accordion.active,
+.green-theme button.accordion:hover {
+    border-left-color: #2ca942;
+}
+
+.red-theme button.accordion.active,
+.red-theme button.accordion:hover {
+    border-left-color: #df3022;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+.survey .img-wrap {
+    text-align: right;
+}
+
+.survey ul {
+    padding-top: 85px;
+}
+
+.survey li {
+    margin-bottom: 20px;
+    font-family: 'Solomon Sans Book';
+    font-size: 13px;
+    list-style: none;
+}
+
+.survey li span {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.survey .fa {
+    color: #2ca943;
+    font-size: 40px;
+}
+
+.survey .button {
+    clear: both;
+    padding-top: 65px;
+    padding-bottom: 55px;
+    text-align: center;
+}
+
+.survey .btn-buy {
+    display: inline-block;
+    padding: 14px 60px;
+}
+
+.survey .btn-buy:hover {
+    background-color: #278c38;
+    text-decoration: none;
+}
+
+.survey .btn-buy:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Page survey */
+.page-survey .container {
+    display: flex;
+}
+
+.page-survey .navbar-brand-solomon {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.page-survey .header-text {
+    margin: auto;
+    font-family: 'Solomon Sans Semibold';
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-survey .header-text span {
+    color: #2ca943;
+}
+
+.page-survey .btn122 {
+    white-space: nowrap;
+}
+
+.page-survey .survey {
+    background-color: #fafafa;
+    padding: 25px 0 20px;
+}
+
+.q2.page-survey .survey {
+    padding-bottom: 0;
+}
+
+.page-survey .slide {
+    display: none;
+}
+
+.page-survey .slide1 {
+    display: block;
+}
+
+.q2 .survey .container {
+    padding-bottom: 115px;
+    background: url('/phones/question2.png') 50% 100% / contain no-repeat;
+}
+
+.q3 .survey .container {
+    padding-bottom: 40px;
+    background: url('/phones/question3.png') 0 100% / 32% no-repeat;
+}
+
+.page-survey .question {
+    margin-bottom: 35px;
+    padding-left: 15px;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.page-survey .progress {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #278c38;
+    border-radius: 30px;
+    margin-bottom: 35px;
+    padding: 4px;
+}
+
+.page-survey .progress-bar {
+    border-radius: 30px;
+}
+
+.page-survey .options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.page-survey .option {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 3.8px .2px rgba(0, 0, 0, .2);
+    transition: box-shadow .3s;
+    cursor: pointer;
+}
+
+.page-survey .slide1 .option,
+.page-survey .slide3 .option {
+    width: 320px;
+}
+
+.page-survey .slide2 .option {
+    width: 225px;
+}
+
+.page-survey .option.selected {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, .2);
+}
+
+.page-survey .option span {
+    color: #2ca943;
+}
+
+.page-survey .radio-btn {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: auto auto 0;
+    border: 2px solid #278c38;
+    border-radius: 50%;
+}
+
+.page-survey .option.selected .radio-btn::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #2ca943;
+}
+
+.page-survey .survey .buttons-wrap {
+    display: flex;
+    margin-top: 20px;
+}
+
+.page-survey .survey .img-wrap {
+    position: relative;
+    left: -3%;
+    width: 50%;
+}
+
+.page-survey .survey .buttons {
+    width: 50%;
+}
+
+.page-survey .survey .slide2 .buttons,
+.page-survey .survey .slide3 .buttons {
+    margin-left: auto;
+}
+
+.page-survey .btn-back {
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 14px 60px;
+    border: 0;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #278c38;
+    font-size: 24px;
+    transition: background-color .3s;
+}
+
+.page-survey .btn-back:hover {
+    background-color: #b9cebe;
+}
+
+.page-survey .btn-back:focus {
+    outline: 0;
+}
+
+div.acc {
+    padding: 0 18px;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height .2s ease-out;
+    transition: max-height .2s ease-out;
+}
+
+.background-black div.acc {
+    color: #444;
+}
+
+p.acc_top {
+    padding: 20px;
+    font-size: 16px;
+}
+
+.li-acc {
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.otzyv-gran {
+    margin-bottom: 40px;
+}
+
+p#otvety {
+    margin: 40px 0 50px 0;
+}
+
+img.type-logo {
+    margin: 0 auto;
+}
+
+img#garanty-logo {
+    position: absolute;
+    top: 45%;
+    left: 80px;
+}
+
+.together {
+    padding-bottom: 55px;
+}
+
+.together img {
+    margin: auto;
+}
+
+.timer .text-left>div {
+    text-align: inherit !important;
+}
+
+.timer span {
+    font-family: 'Solomon Sans Black' !important;
+}
+
+span[id^="timer-text"] {
+    font-family: 'Solomon Sans Book' !important;
+    text-align: center !important;
+    color: #3d3d3c !important;
+}
+
+.slider-with-border {
+    border-right: 1px solid #dadada;
+}
+
+.slider-with-border-black {
+    border-right: 1px solid #a6a6a6;
+}
+
+.slider-with-border-orange {
+    border-right: 1px solid #df3022;
+}
+
+.hide-bullets {
+    list-style: none;
+    margin-left: -40px;
+    margin-top: 20px;
+}
+
+.thumbnail {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+    width: 100%;
+}
+
+div#myCarousel233,
+div#myCarousel299 {
+    margin-bottom: 20px;
+}
+
+#myCarousel233 .carousel-control,
+#myCarousel299 .carousel-control {
+    background: none;
+    text-shadow: none;
+    color: #3d3d3c;
+}
+
+.additional .carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 20px;
+}
+
+.additional .carousel-control {
+    background: none;
+    color: #222;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 90px;
+}
+
+.additional .carousel-control.left {
+    left: -12px;
+}
+
+.additional .carousel-control.right {
+    right: -12px !important;
+}
+
+.additional .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: -25px;
+    margin-right: -19px;
+}
+
+.additional .carousel-indicators li {
+    background: #c0c0c0;
+}
+
+.additional .carousel-indicators .active {
+    background: #333333;
+}
+
+.additional .col-xs-7,
+.additional .col-xs-5 {
+    padding: 0;
+} 
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+}
+
+#quote-carousel .carousel-control {
+    background: none;
+    color: #222;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+
+#quote-carousel .carousel-control.left {
+    left: -35px;
+}
+
+#quote-carousel .carousel-control.right {
+    right: -35px !important;
+}
+
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+
+#quote-carousel .carousel-indicators li {
+    background: #c0c0c0;
+}
+
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+}
+
+#quote-carousel img {
+    width: 250px;
+    height: 100px
+}
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+p#otzyvu {
+    margin-top: 40px;
+}
+
+#ouibounce-modal {
+    font-family: 'Open Sans', sans-serif;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#ouibounce-modal .underlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    -webkit-animation: fadein 0.5s;
+    animation: fadein 0.5s;
+}
+
+#ouibounce-modal .modal {
+    width: 600px;
+    height: 400px;
+    background-color: #f0f1f2;
+    z-index: 1;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px;
+    -webkit-animation: popin 0.3s;
+    animation: popin 0.3s;
+}
+
+#ouibounce-modal .modal-title {
+    font-size: 18px;
+    background-color: #252525;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+}
+
+#ouibounce-modal p.modal-super-header {
+    color: #fff;
+    font-size: 1em;
+    margin: 0.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#ouibounce-modal .modal-body {
+    padding: 20px 35px;
+    font-size: 0.9em;
+}
+
+#ouibounce-modal p {
+    color: #344a5f;
+}
+
+#ouibounce-modal .modal-footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#ouibounce-modal .modal-footer p {
+    text-transform: capitalize;
+    cursor: pointer;
+    display: inline;
+    border-bottom: 1px solid #344a5f;
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes popin {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+    85% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes popin {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+    85% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 991px) {
+    .btn-buy.together {
+        padding: 13px 18% 13px 18px;
+    }
+    .btn-buy.together::after {
+        width: 30%;
+        line-height: 4.7;
+    }
+    .q2 .survey .container {
+        padding-bottom: 50px;
+    }
+    .page-survey .survey .img-wrap {
+        left: -1%;
+    }
+    .page-survey .btn-back,
+    .page-survey .survey .btn-buy {
+        padding: 10px 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-logo-margin .btn-buy-universal {
+        display: inline-block;
+        width: 285px;
+    }
+    .video .video-text {
+        margin: -35px 0 30px;
+    }
+    .block-divider {
+        font-size: 25px;
+    }
+    p.dark-grey {
+        font-size: 25px;
+    }
+    .phone-main-banner {
+        left: -50px;
+        margin-left: 0;
+        width: 120%;
+        max-width: 400px;
+    }
+    .magnetic-how-to .background-black {
+        margin-top: -30px;
+    }
+    #super-opt {
+        margin-top: -10px;
+    }
+    p.p-below-jumbo {
+        font-size: 14px;
+    }
+    p.jumbo-main-logo {
+        font-size: 27px;
+        font-family: 'Solomon Sans Light';
+        margin: 0px 0 15px 0;
+    }
+    .slider-with-border,
+    .border-mobile {
+        border-bottom: 1px solid #dadada;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+    .btn-buy {
+        font-size: 18px;
+        margin: 10px auto 10px auto;
+    }
+    .btn-buy.discount {
+        padding: 14px 95px 14px 10px;
+    }
+    .btn-buy.discount:after {
+        width: 90px;
+    }
+    .btn-buy-universal {
+        font-size: 18px;
+        padding: 14px 109px 14px 5px;
+    }
+    .btn-buy-universal:after {
+        width: 105px;
+    }
+    .btn-buy-standart.discount,
+    .btn-buy-fantasy.discount {
+        padding: 14px 95px 14px 20px;
+    }
+    .btn-buy-standart:after,
+    .btn-buy-fantasy:after {
+        width: 85px;
+    }
+    .btn-buy-powerbank.discount {
+        font-size: 18px;
+        margin: 130px auto 50px auto;
+        padding: 14px 95px 14px 10px;
+    }
+    .btn-buy-powerbank:after {
+        width: 85px;
+    }
+    .btn-buy.autocharger {
+        font-size: 18px;
+        margin-top: 45px;
+        margin-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .btn-buy.together {
+        padding: 13px 95px 13px 10px;
+    }
+    .btn-buy.together::after {
+        line-height: 3.3;
+    }
+    .above-button {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    .below-button {
+        margin-top: 15px;
+    }
+    .product-title {
+        height: auto;
+    }
+    .visa-mastercard {
+        width: 20%;
+    }
+    p.jumbo,
+    h2.jumbo {
+        font-size: 25px;
+    }
+    .big-margin {
+        margin: -50px 0 30px 0;
+    }
+    .slider-with-border {
+        border-right-style: none;
+    }
+    .timer .text-left>div {
+        text-align: center !important;
+    }
+    p#text-above-setka-with-minus-margin-top.text-above-setka {
+        margin: -10px 0 0 0;
+        text-align: center;
+    }
+    p.text-above-setka {
+        padding-bottom: 10px;
+    }
+    .together {
+        padding-bottom: 30px;
+    }
+    div#div-with-low-bottom-margin {
+        margin: 40px 0 40px 0;
+    }
+    p#text-above-powerbank.big-margin {
+        margin: 15px 0 35px 0;
+    }
+    .additional img {
+        width: 85%;
+    }
+    .additional .carousel {
+        padding: 0;
+    }
+    .additional .carousel-control {
+        top: 40%;
+        margin-top: 0;
+        font-size: 2em;
+    }
+    .additional .carousel-indicators {
+        bottom: -30px !important;
+    }
+    .autocharger .col-sm-7,
+    .autocharger p#text-above-powerbank.big-margin {
+        display: none;
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 12px;
+        height: 12px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    p#powerbank-text-below-font-12,
+    p#powerbank-text-below-font-12_2 {
+        font-size: 12px;
+    }
+    img.powerbank-hand {
+        margin: auto;
+    }
+    .autocharger-button-below {
+        margin: 47px auto;
+        float: none;
+    }
+    p#setka~.container .col-sm-4:nth-of-type(3),
+    p#setka~.container .col-sm-4:nth-of-type(5),
+    p#setka~.container .col-sm-4:nth-of-type(6) {
+        display: none;
+    }
+    p.setka2 {
+        padding: 35px 0 0px 0;
+    }
+    p#setka3 {
+        padding: 30px 0;
+    }
+    p#setka4 {
+        font-size: 22px;
+        padding: 30px 0;
+    }
+    p.text-above-bonus {
+        margin-bottom: 10px;
+    }
+    .four-types-text-colomn {
+        padding-right: 15px;
+        margin-top: 12px;
+    }
+    .p-below-types {
+        font-size: 20px;
+    }
+    .padding-2phones-2receivers {
+        padding-top: 0;
+        margin-bottom: 30px;
+    }
+    .p-2phones-2receivers {
+        font-size: 12px;
+    }
+    .garanty-text-side {
+        padding: 15px 0;
+    }
+    .garanty-div {
+        padding-bottom: 20px;
+    }
+    .slider-with-border-black {
+        border-right-style: none;
+        margin-bottom: 50px;
+    }
+    .padding-150 {
+        padding-left: 20px;
+    }
+    .padding-160 {
+        padding-left: 20px;
+        padding-bottom: 30px;
+    }
+    div#dostavka {
+        padding-bottom: 40px;
+    }
+    #quote-carousel .carousel-control.left {
+        left: -15px;
+    }
+    #quote-carousel .carousel-control.right {
+        right: -15px !important;
+    }
+    div.otzyv {
+        margin-top: 20px;
+    }
+    button.accordion {
+        font-size: 16px;
+    }
+    p.acc_top {
+        font-size: 14px;
+    }
+    .li-acc {
+        font-size: 14px;
+    }
+    .btn-buy-voprosy {
+        padding: 14px 80px;
+    }
+    img#garanty-logo {
+        top: 40%;
+        left: 45px;
+    }
+    #scrollup {
+        right: -5px;
+        top: 75%;
+        bottom: 100px;
+    }
+    .modal-footer {
+        text-align: left;
+    }
+    .navbar-solomon {
+        padding: 8px;
+    }
+    .main-logo-margin .row {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .item.main {
+        -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+        order: 0;
+    }
+    .item.main p {
+        max-width: 400px;
+        text-align: center;
+    }
+    .main-logo-margin .work-with {
+        position: absolute;
+        left: 0;
+        top: 195px;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        width: 38%;
+    }
+    .main-logo-margin .btn-wrap {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    .visa-margin-bottom {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+    }
+    .item.power {
+        -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+        order: 4;
+    }
+    .item.auto {
+        -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+        order: 5;
+    }
+    .main-logo-margin .slogan {
+        -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+        order: 6;
+    }
+    .phone-logo-margin {
+        margin-left: 3px;
+        margin-right: 3px;
+        width: 20px;
+    }
+    .img-responsive {
+        margin: auto;
+    }
+    .slidebox {
+        width: 100%;
+        height: 165px;
+        top: 45px;
+        margin-left: 0;
+        z-index: 20;
+    }
+    .slidebox.magnetic {
+        width: 97%;
+        height: 125px;
+    }
+    p.p-inside-slidebox {
+        font-size: 20px;
+    }
+    .close {
+        font-size: 28px;
+    }
+    .text-left {
+        margin-left: 0;
+    }
+    .youtube-shadow {
+        margin: -15px 0 60px 0;
+    }
+    img#nova-poshta {
+        width: 30%;
+    }
+    .second-block .col-sm-4 {
+        margin-bottom: 15px;
+    }
+    h1.h1-magnetic {
+        margin-bottom: 70px;
+        font-size: 29px;
+    }
+    .p-below-h1-magnetic {
+        width: 80%;
+    }
+    .btn-fast-zakaz {
+        font-size: 16px;
+        margin: 0 0 30px 0;
+        padding: 10px 20px;
+    }
+    .left-main-block-magnetic {
+        width: 68%;
+        padding-left: 13px;
+        padding-bottom: 5px;
+    }
+    .main-logo-margin .background-black {
+        background-image: none;
+    }
+    .main-logo-margin .background-black::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../phones/photo_background_mobile.jpg");
+        background-position: left center;
+        background-size: cover;
+        opacity: .6;
+    }
+    .right-main-block-magnetic {
+        display: none;
+    }
+    .p-below-h1-magnetic,
+    .p-below-p-below-h1-magnetic {
+        font-size: 14px;
+    }
+    .btn-buy-standart-magnetic,
+    .btn-buy-fantasy-magnetic {
+        padding: 14px 99px 14px 20px;
+        font-size: 18px;
+    }
+    .btn-buy-standart-magnetic::before,
+    .btn-buy-fantasy-magnetic::before {
+        line-height: 2.9;
+    }
+    .xiaomi-trubka {
+        display: none;
+    }
+    .xiaomi-trubka-mobile {
+        display: block;
+        margin-top: -80px;
+    }
+    .magnetic-info .background-black2 {
+        margin-top: 20px;
+    }
+    p.margin-best {
+        margin-top: 20px;
+        padding-top: 30px;
+    }
+    .mag-padding-left {
+        padding-left: 10px;
+    }
+    .mag-margin-top1,
+    .mag-margin-top2,
+    .mag-margin-top4,
+    .mag-1 {
+        margin-top: 30px;
+    }
+    .font-24 {
+        font-size: 20px;
+    }
+    .font-16 {
+        font-size: 15px;
+    }
+    .block-1 {
+        margin-left: 10px;
+        margin-top: 40px;
+    }
+    .block-2 {
+        margin-left: 35px;
+    }
+    .block-3 {
+        margin-left: 70px;
+        margin-top: 20px;
+    }
+    .block-4 {
+        margin-left: 105px;
+    }
+    .mag-padding-left22 {
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    .car {
+        margin-top: 20px;
+        width: 105%;
+    }
+    .background-black.delivery {
+        padding-bottom: 20px;
+    }
+    .slider-with-border-orange {
+        border-right: 1px solid #232323;
+    }
+    .margin-photo-magnetic {
+        margin-top: -30px;
+    }
+    .page-survey .container {
+        flex-wrap: wrap;
+    }
+    .page-survey .container>.navbar-header {
+        margin-left: 0;
+    }
+    .page-survey a.navbar-brand-solomon {
+        font-size: 30px;
+    }
+    .page-survey .header-text {
+        order: 3;
+        width: 100%;
+    }
+    .page-survey .header-btn {
+        margin-left: auto;
+    }
+    .page-survey .btn122 {
+        margin-top: 7px;
+        padding: 7px;
+        font-size: 11px;
+    }
+    .q2 .survey .container {
+        padding-bottom: 30px;
+    }
+    .page-survey .question {
+        font-size: 23px;
+    }
+    .page-survey .slide1 .option,
+    .page-survey .slide3 .option {
+        width: 100%;
+        max-width: 320px;
+    }
+    .page-survey .survey .buttons-wrap {
+        flex-wrap: wrap;
+    }
+    .page-survey .survey .img-wrap {
+        order: 2;
+        left: 0;
+        width: 100%;
+    }
+    .page-survey .survey .buttons {
+        width: 100%;
+        text-align: center;
+    }
+    .page-survey .btn-back {
+        font-size: 18px;
+        margin: 10px auto 10px auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    ul.navbar-solomon-li a {
+        font-size: 11px;
+    }
+    .navbar-right {
+        margin-right: 15px;
+    }
+    a.navbar-brand-solomon {
+        font-size: 30px;
+    }
+    button.btn122 {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 15px 5px;
+    }
+    .phone-main-banner {
+        margin-left: -15px;
+        width: 115%;
+        /* margin-top: 125px; */
+    }
+    p.jumbo-main-logo {
+        font-size: 27px;
+        font-family: 'Solomon Sans Light';
+        margin: 15px 0 30px 0;
+    }
+    .btn-buy {
+        font-size: 20px;
+        margin: 10px auto;
+    }
+    .btn-buy.discount {
+        padding: 14px 110px 14px 20px;
+    }
+    .btn-buy.discount:after {
+        width: 90px;
+    }
+    .btn-buy-universal {
+        font-size: 20px;
+    }
+    .btn-buy-standart.discount,
+    .btn-buy-fantasy.discount {
+        margin: 40px auto 0;
+        font-size: 20px;
+        padding: 14px 110px 14px 25px;
+    }
+    .btn-buy-powerbank.discount {
+        margin: 130px auto 70px auto;
+        font-size: 18px;
+        padding: 14px 110px 14px 10px;
+    }
+    .btn-buy-powerbank:after {
+        width: 100px;
+    }
+    .btn-buy.autocharger {
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 18px;
+    }
+    p.jumbo,
+    h2.jumbo {
+        font-size: 28px;
+    }
+    .visa-margin-bottom {
+        margin-bottom: 15px;
+    }
+    .additional img {
+        width: 85%;
+    }
+    .additional .carousel-control {
+        margin-top: 35px;
+    }
+    p#powerbank-text-below-font-12,
+    p#powerbank-text-below-font-12_2 {
+        font-size: 11px;
+    }
+    .four-types-text-colomn {
+        padding-right: 0px;
+    }
+    .four-type-item {
+        font-size: 18px;
+    }
+    .p-below-four-type-item {
+        font-size: 11px;
+    }
+    .padding-2phones-2receivers {
+        padding-top: 30px;
+    }
+    .p-2phones-2receivers {
+        padding-left: 0px;
+    }
+    .garanty-text-side {
+        padding-top: 40px;
+    }
+    .garanty-text {
+        font-size: 20px;
+    }
+    .p-below-garanty-text {
+        font-size: 12px;
+    }
+    .padding-150,
+    .padding-160 {
+        padding-left: 50px;
+    }
+    img#nova-poshta {
+        width: 40%;
+    }
+    #quote-carousel .carousel-control {
+        margin-top: 90px;
+    }
+    .btn-buy-voprosy,
+    .btn-buy-voprosy2 {
+        padding: 14px 106px;
+    }
+    img#garanty-logo {
+        top: 38%;
+        left: 35px;
+    }
+    #scrollup {
+        right: 0;
+        top: 84%;
+    }
+    h1.h1-magnetic {
+        font-size: 29px;
+    }
+    .p-below-h1-magnetic,
+    .p-below-p-below-h1-magnetic {
+        font-size: 14px;
+    }
+    .btn-fast-zakaz {
+        font-size: 20px;
+    }
+    .right-main-block-magnetic {
+        padding-top: 370px;
+        padding-left: 195px;
+    }
+    .left-main-block-magnetic {
+        padding-left: 25px;
+        padding-top: 30px;
+    }
+    .btn-buy-standart-magnetic,
+    .btn-buy-fantasy-magnetic {
+        padding: 14px 110px 14px 30px;
+    }
+    .xiaomi-trubka {
+        margin-left: -250px;
+        margin-bottom: -140px;
+    }
+    .mag-padding-left {
+        padding-left: 30px;
+    }
+    .mag-margin-top1 {
+        margin-top: 100px;
+    }
+    .font-24 {
+        font-size: 20px;
+    }
+    .font-16 {
+        font-size: 14px;
+    }
+    .xiaomi-trubka-mobile {
+        display: none;
+    }
+    .block-1 {
+        margin-left: -250px;
+    }
+    .block-2 {
+        margin-left: -130px;
+    }
+    .block-3 {
+        margin-left: -10px;
+    }
+    .block-4 {
+        margin-left: 32px;
+    }
+    .car {
+        margin-top: 240px;
+        margin-left: -60px;
+        width: 120%;
+    }
+    .mag-padding-left22 {
+        padding-top: 5px;
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .phone-main-banner {
+        margin-left: -15px;
+        width: 115%;
+        /* margin-top: 150px; */
+    }
+    p.jumbo-main-logo {
+        font-size: 35px;
+        font-family: 'Solomon Sans Light';
+    }
+    .additional img {
+        width: 90%;
+    }
+    .additional .carousel-control {
+        margin-top: 60px;
+    }
+    .four-types-text-colomn {
+        padding-right: 0px;
+    }
+    .padding-150,
+    .padding-160 {
+        padding-left: 100px;
+    }
+    .btn-buy-voprosy,
+    .btn-buy-voprosy2 {
+        padding: 14px 160px;
+    }
+    .visa-margin-bottom {
+        margin-bottom: 20px;
+    }
+    img#garanty-logo {
+        top: 43%;
+        left: 55px;
+    }
+    .padding-podval {
+        padding-left: 25px
+    }
+    .navbar-solomon-li {
+        font-size: 13px;
+    }
+    .xiaomi-trubka-mobile {
+        display: none;
+    }
+    #scrollup {
+        right: 0px;
+        top: 88%;
+    }
+    .left-main-block-magnetic {
+        padding-left: 50px;
+        padding-top: 30px;
+    }
+    .right-main-block-magnetic {
+        padding-top: 390px;
+        padding-left: 300px;
+    }
+    .xiaomi-trubka {
+        margin-left: -140px;
+    }
+    .block-1 {
+        margin-left: -330px;
+    }
+    .block-2 {
+        margin-left: -210px;
+    }
+    .block-3 {
+        margin-left: -100px;
+    }
+    .block-4 {
+        margin-left: 9px;
+    }
+    .mag-padding-left22 {
+        padding-top: 10px;
+        padding-left: 50px;
+    }
+    .car {
+        margin-top: 135px;
+        margin-left: -50px;
+    }
+}

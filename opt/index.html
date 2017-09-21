@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>iGadget — оптовые закупки</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/send/script.js"></script>
+  	<style>
+            body {
+                min-width: 960px;
+                max-width: 1400px;
+                margin: auto;
+            }
+            a.button7 {
+                -webkit-border-radius: 60;
+                -moz-border-radius: 60;
+                border-radius: 60px;
+                -webkit-box-shadow: 0px 2px 15px #7d7d7d;
+                -moz-box-shadow: 0px 2px 15px #7d7d7d;
+                box-shadow: 0px 2px 20px #7d7d7d;
+                color: #ffffff;
+                font-size: 30px;
+                background: #3bb4ff;
+                padding: 25px 40px 25px 40px;
+                text-decoration: none;
+            } 
+            a.button7:hover {
+                background: #29a4f5;
+                background-image: -webkit-linear-gradient(top, #29a4f5, #059ef0);
+                background-image: -moz-linear-gradient(top, #29a4f5, #059ef0);
+                background-image: -ms-linear-gradient(top, #29a4f5, #059ef0);
+                background-image: -o-linear-gradient(top, #29a4f5, #059ef0);
+                background-image: linear-gradient(to bottom, #29a4f5, #059ef0);
+                text-decoration: none;
+            }
+            a.button1 {
+                -webkit-border-radius: 60;
+                -moz-border-radius: 60;
+                border-radius: 60px;
+                -webkit-box-shadow: 0px 2px 15px #7d7d7d;
+                -moz-box-shadow: 0px 2px 15px #7d7d7d;
+                box-shadow: 0px 2px 20px #7d7d7d;
+                color: #ffffff;
+                font-size: 45px;
+                background: #2ca942;
+                padding: 15px 55px 15px 55px;
+                text-decoration: none;
+                cursor: pointer;
+            } 
+            a.button1:hover {
+                background: #269039;
+                background-image: -webkit-linear-gradient(top, #29a4f5, #059ef0);
+                background-image: -moz-linear-gradient(top, #29a4f5, #059ef0);
+                background-image: -ms-linear-gradient(top, #29a4f5, #059ef0);
+                background-image: -o-linear-gradient(top, #29a4f5, #059ef0);
+                background-image: linear-gradient(to bottom, #269039, #269039);
+                text-decoration: none;
+            }
+            a.button8 {
+                background: #35e6c3;
+                background-image: -webkit-linear-gradient(top, #35e6c3, #2ec769);
+                background-image: -moz-linear-gradient(top, #35e6c3, #2ec769);
+                background-image: -ms-linear-gradient(top, #35e6c3, #2ec769);
+                background-image: -o-linear-gradient(top, #35e6c3, #2ec769);
+                background-image: linear-gradient(to bottom, #35e6c3, #2ec769);
+                -webkit-border-radius: 28;
+                -moz-border-radius: 28;
+                border-radius: 28px;
+                -webkit-box-shadow: 0px 1px 15px #9e9e9e;
+                -moz-box-shadow: 0px 1px 15px #9e9e9e;
+                box-shadow: 0px 1px 15px #9e9e9e;
+                color: #ffffff;
+                font-size: 20px;
+                padding: 13px 25px 13px 25px;
+                text-decoration: none;
+            } 
+            a.button8:hover {
+                background: #35d4b4;
+                background-image: -webkit-linear-gradient(top, #35d4b4, #2cb862);
+                background-image: -moz-linear-gradient(top, #35d4b4, #2cb862);
+                background-image: -ms-linear-gradient(top, #35d4b4, #2cb862);
+                background-image: -o-linear-gradient(top, #35d4b4, #2cb862);
+                background-image: linear-gradient(to bottom, #35d4b4, #2cb862);
+                text-decoration: none;
+            }
+            .affix {
+                top: 0;
+                width: 100%;
+            }
+            .affix + .container-fluid {
+                padding-top: 70px;
+            }
+            button.accordion {
+                background-color: #eee;
+                color: #444;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 25px;
+                transition: 0.4s;
+            }
+            button.accordion.active, button.accordion:hover {
+                    background-color: #ddd;
+            }
+            button.accordion:after {
+                    content: '\002B';
+                    color: #777;
+                    font-weight: bold;
+                    float: right;
+                    margin-left: 5px;
+            }
+            button.accordion.active:after {
+                    content: "\2212";
+            }
+            div.acc {
+                    padding: 0 18px;
+                    background-color: white;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.2s ease-out;
+            }
+            p.acc_top{
+                padding-top: 15px;
+                font-size: 15px;
+            }
+            #scrollup {
+                position: fixed; /* фиксированная позиция */
+                right: 20px; /* отступ слева */
+                bottom: 20px; /* отступ снизу */
+                display: none; /* спрятать блок */
+                cursor: pointer;
+                opacity: 0.65;
+            }
+            body {
+			position: relative;
+		    }
+                #section1 {padding-top:80px}
+                #section2 {padding-top:50px}
+                #section3 {padding-top:50px}
+                #section4 {padding-top:50px}
+                #section5 {padding-top:50px}
+                #section6 {padding-top:50px}
+                #section7 {padding-top:50px}
+            button.btn777 {
+                width: 100%;
+                height: 50px;
+                margin: 0;
+                padding: 0 20px;
+                vertical-align: middle;
+                background: #2ca942;
+                border: 0;
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 50px;
+                color: #fff;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+                border-radius: 4px;
+                text-shadow: none;
+                -moz-box-shadow: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                -o-transition: all .3s;
+                -moz-transition: all .3s;
+                -webkit-transition: all .3s;
+                -ms-transition: all .3s;
+                transition: all .3s;
+            }
+            button.btn777:hover {
+                color: white;
+                background: #238a35;
+            }
+            #contact {
+                background: #F9F9F9;
+                padding: 30px;
+                margin: 20px 0px;
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+            }
+            .big_p {
+                font-size: 25px;
+                padding-bottom: 5px
+            }
+            .between-12 {
+                margin-bottom: 50px
+            }
+            .padding-12 {
+                padding: 0 90px
+            }
+            .middle-big {
+                text-align: center;
+                margin: 60px 0;
+                font-size: 40px
+            }
+            .li-margin {
+                margin-bottom: 3px
+            }
+            .div-center {
+                padding: 0 5%;
+            }
+            .div-center2 {
+                margin-top: 50px
+            }
+            .div-right {
+                text-align: right
+            }
+            .margin-form-group {
+                margin: 0 1%
+            }
+	</style>
+</head>
+
+
+<body>
+<input type="hidden" id="opt_zak" value="Оптовые закупки">
+
+<table style="margin-bottom: 40px; background-color:#eeeeee" border="0" cellpadding="1" cellspacing="1" width="100%" align="center">
+        <tr>
+            <td width="15%" style="text-align: center">
+                <a><img style="margin-left: 20%" class="img-responsive" src="logo/igadget-logo.jpg" width="100px" height="100px" alt="iGadget"></a>
+            </td>
+            <td width="25%" style="text-align: center">
+                <span style="font-size: 25px">Импорт и оптовая продажа</span><br>
+                <span style="font-size: 20px">техники и аксесуаров</span>
+            </td>
+            <td width="35%" style="text-align: center; padding-top: 15px; font-size: 18px">
+                <p>Мы работаем <b>без выходных</b></p>
+                <p>Звоните ежедневно с <b>09.00 до 20.00</b></p>
+                <p>Тел: <b>067-44-888-55</b> (Киев)</p>
+            </td>
+            <td width="25%">
+                <p style="font-size: 20px; text-align: center">Оперативно доставляем по всей Украине!</p>
+            </td>
+        </tr>
+</table>
+
+
+<div class="container">
+        <div class="col-md-8" style="margin-top: 20px">
+            <img class="img-responsive" style="margin: 0 auto" src="phones/phone_charger.jpg" width="auto" height="auto" alt="iGadget"><br>
+        </div>
+
+        <div class="col-md-4" style="margin-top: 20px">
+            <div class="container-form222">
+                <div id="contact2222">
+                    <p style="font-size: 22px; padding-bottom: 22px">Оставьте заявку и получите наше оптовое предложение</p>
+                        <div class="form-group">
+                            <input type="text" class="form-control input-md" id="form-username8" required="required" placeholder="Имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="phone" class="form-control input-md" id="form-tel8" required="required" placeholder="Телефон">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control input-md" id="form-email8" placeholder="E-mail">
+                        </div>
+                        <button href="#2" id="send8" class="btn777 btn btn-default" >Получить оптовые цены</button>
+						<div class="messages8"></div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="jumbotron" style="text-align: center; margin-top: 60px">
+    <p style="font-size: 40px">Оптовая продажа универсальных беспроводных зарядных устройств для всех видов телефонов</p><br>
+    <p style="font-size: 23px">Высоко маржинальный продукт, который уже привлёк внимание потребителей и продолжает набирать популярность</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 middle-big">
+            Сотрудничая с нами Вы приобретаете:
+        </div>
+            <div class="col-md-12 between-12">
+                <div class="col-md-1" style="margin-bottom: 15px">
+                    <img src="icons/linea_ecommerce_1.0/_SVG/ecommerce_dollar.svg" width="70px" height="70px" alt="dollar">
+                </div>
+                <div class="col-md-5" style="margin-bottom: 30px">
+                    <p class="big_p">Высокую прибыль и уникальные условия<p>
+                    <p>Мы напрямую работаем с фабриками производителями и имеем долгие отношения с ними по ряду продуктов. Поэтому мы можем предложить Вам самые низкие цены на качественный продукт и предоставить гарантийный сервис</p>
+                </div>
+                <div class="col-md-1" style="margin-bottom: 15px">
+                    <img src="icons/linea_ecommerce_1.0/_SVG/ecommerce_sales.svg" width="70px" height="70px" alt="dollar">
+                </div>
+                <div class="col-md-5">
+                    <p class="big_p">Регулярные акции и подарки для Ваших покупателей</p>
+                    <p>Покупая у нас Ваше предложение всегда будет выгодно отличаться от предложений Ваших конкурентов. Вы будете всегда на шаг впереди.</p>
+                </div>
+            </div>
+            <div class="col-md-12 between-12">
+                    <div class="col-md-1" style="margin-bottom: 15px">
+                        <img src="icons/linea_ecommerce_1.0/_SVG/ecommerce_wallet.svg" width="70px" height="70px" alt="dollar">
+                    </div>
+                    <div class="col-md-5" style="margin-bottom: 30px">
+                        <p class="big_p">Минимальный заказ от 5-ти единиц<p>
+                        <p>Мы стремимся сделать Ваше взаимодействие с нами максимально комфортным</p>
+                    </div>
+                    <div class="col-md-1" style="margin-bottom: 15px">
+                        <img src="icons/linea_ecommerce_1.0/_SVG/ecommerce_cart_refresh.svg" width="70px" height="70px" alt="dollar">
+                    </div>
+                    <div class="col-md-5" style="margin-bottom: 30px">
+                        <p class="big_p">Гибкие условия оплаты<p>
+                        <p>Мы предлагаем Вам наилучшие цены на наш продукт на условиях выкупа. Также мы можем предоставить Вам продукт на реализацию</p>
+                    </div>
+            </div>
+            <div class="col-md-12 between-12">
+                    <div class="col-md-1" style="margin-bottom: 15px">
+                        <img src="icons/linea_ecommerce_1.0/_SVG/ecommerce_bag_check.svg" width="70px" height="70px" alt="dollar">
+                    </div>
+                    <div class="col-md-5" style="margin-bottom: 30px">
+                        <p class="big_p">Постоянное наличие на складе в Киеве<p>
+                        <p>Мы храним на складе достаточный товарный запас, а благодаря налаженным логистическим каналам имеем возможность оперативно реагировать на колебания спроса и пополнять склад</p>
+                    </div>
+                    <div class="col-md-1" style="margin-bottom: 15px">
+                        <img src="icons/linea_ecommerce_1.0/_SVG/user.svg" style="margin-left: -10px" width="90px" height="90px" alt="dollar">
+                    </div>
+                    <div class="col-md-5" style="margin-bottom: 30px">
+                        <p class="big_p">Ваш индивидуальный ассортимент<p>
+                        <p>Мы можем предложить Вам дизайн устройства который будет только у Вас или брендировать продукт Вашей ТМ</p>
+                    </div> 
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-1" style="margin-bottom: 15px">
+                        <img src="icons/linea_basic_1.0/_SVG/basic_headset.svg" width="70px" height="70px" alt="dollar">
+                </div>        
+                <div class="col-md-11">        
+                        <p class="big_p">Мы можем найти в Китае и привезти любой товар под Ваш заказ</p>     
+                        <p>Мы имеем своих представителей в Китае, которые могут найти производителя необходимого товара, провести переговоры на родном языке производителя и добиться лучших условий</p>       
+                </div>
+            </div>
+    </div>
+</div>
+
+<div class="jumbotron" style="text-align: center; margin-top: 100px">
+    <p style="font-size: 60px; padding-top: 30px">Гарантия</p><br>
+</div>
+
+<div class="container">
+    <div class="row-fluid">
+        <div class="col-md-12">
+            <p class="middle-big"><img src="icons/linea_ecommerce_1.0/_SVG/ecommerce_diamond.svg" style="margin-right: 20px" width="70px" height="70px" alt="dollar">Гарантия качества</p>
+            <p class="big_p">Все беспроводные зарядные устройства перед отправкой нашим клиентам проходят четыре уровня проверки:</p>
+                <ul style="font-size: 20px">
+                    <li>две проверки качества продукции на этапе производства</li>
+                    <li>наши представители проверяют партию перед отправкой продукции в Украину</li>
+                    <li>перед отправкой клиенту мы проверяем каждую единицу, независимо будь то розничный или оптовый покупатель</li>
+                </ul>
+            <p class="big_p" style="margin-top: 50px">Именно поэтому, на все наши устройства...</p>
+            <p class="middle-big"><img src="icons/linea_basic_1.0/_SVG/basic_gear.svg" style="margin-right: 20px" width="65px" height="65px" alt="dollar">Гарантия один год!</p>
+            <p class="big_p">Работая с нами, Вы всегда можете быть уверены, что Ваши покупатели получат качественный продукт</p>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron" style="text-align: center; margin: 100px 0 0 0">
+    <p style="font-size: 60px; padding-top: 30px">Наш ассортимент беспроводных зарядных устройств</p><br>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6" style="text-align: center; margin-top: 100px">
+            <img src="phones/charger_01_01_01.jpg" width="60%" alt="charger"><br>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="margin-top: 70px">Характеристики</button>
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="margin-top: 25%">
+                            <div class="modal-header" style="margin-bottom: 20px; background-color: #eeeeee">
+                                <p style="font-size: 30px" class="modal-title">LUNA FANTASY</p>
+                            </div>
+                                <div class="modal-body">
+                                    <ul style="text-align: left; list-style: none; font-size: 1.2em">
+                                        <li class="li-margin"><b>Скорость зарядки батареи:</b> от 0 до 100% - 1,5 часа</li>
+                                        <li class="li-margin"><b>Напряжение:</b> DC 5V 2A / DV 5V 1.5A</li>
+                                        <li class="li-margin"><b>Размер без упаковки:</b> 76*76*6 mm</li>
+                                        <li class="li-margin"><b>Размер в упаковке:</b> 119*119*20 mm</li>
+                                        <li class="li-margin"><b>Вес без упаковки:</b> 60 g</li>
+                                        <li class="li-margin"><b>Вес в упаковке:</b> 90 g</li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>            
+        </div>
+        
+        <div class="col-md-6" style="text-align: center; margin-top: 100px">
+            <img src="phones/charger_02_02_02.jpg" width="60%" alt="charger"><br>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2" style="margin-top: 70px">Характеристики</button>
+                    <div id="myModal2" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="margin-top: 25%">
+                                <div class="modal-header" style="margin-bottom: 20px; background-color: #eeeeee">
+                                    <p style="font-size: 30px" class="modal-title">LUNA STANDART</p>
+                                </div>
+                                <div class="modal-body">
+                                    <ul style="text-align: left; list-style: none; font-size: 1.2em">
+                                        <li class="li-margin"><b>Скорость зарядки батареи:</b> от 0 до 100% - 1,5 часа</li>
+                                        <li class="li-margin"><b>Напряжение:</b> DC 5V 2A / DV 5V 1.5A</li>
+                                        <li class="li-margin"><b>Размер без упаковки:</b> 100*100*9.5 mm</li>
+                                        <li class="li-margin"><b>Размер в упаковке:</b> 128*128*30 mm</li>
+                                        <li class="li-margin"><b>Вес без упаковки:</b> 74 g</li>
+                                        <li class="li-margin"><b>Вес в упаковке:</b> 122 g</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        
+        <div class="col-md-12" style="text-align: center; margin-top: 150px">
+            <a class="button1" data-toggle="modal" data-target="#myModal80">КУПИТЬ</a>
+                 <div id="myModal80" class="modal fade" role="dialog">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content" style="margin-top: 25%">
+                                                    <div class="modal-header" style="text-align: center">
+                                                        <p class="modal-title" style="font-size: 25px; padding-left: 10px">Сделать оптовый заказ</p>
+                                                        <p style="margin-top: 12px; margin-bottom: -2px; padding-left: 10px; font-size:15px">Мы Вам перезвоним в течении часа.</p>
+                                                    </div>
+                                                    <div class="modal-body" style="padding-left: 25px; padding-right: 25px">
+                                                        <div class="form-group" style="margin-top: 15px">
+                                                            <input style="background: #f8f8f8;" type="text" name="form-username" placeholder="Имя..." class="form-control input-lg" id="form-username6" required="required">
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 15px">
+                                                            <input style="background: #f8f8f8;" type="phone" name="form-phone" placeholder="Номер телефона..." class="form-control input-lg" id="form-tel6" required="required">
+                                                        </div>			
+                                                        <div class="form-group" style="margin-bottom: 15px">
+														<input style="background: #f8f8f8;" type="email" name="form-email" placeholder="E-mail..." class="form-control input-lg" id="form-email6" required="required">
+													    </div>							
+                                                        <button type="submit" class="btn777" id="send6" style="margin-bottom: 15px">Купить</button>
+                                                    </div>
+													<div class="messages6"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+            <p style="margin-top: 15px; font-size: 20px">по оптовой цене</p>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron" style="text-align: center; margin: 100px 0">
+    <p style="font-size: 60px; padding-top: 30px">Это 100% захотят у Вас купить</p>
+    <p style="font-size: 30px">и цена не будет играть главную роль</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" style="font-size: 35px; text-align: center">
+            Убедитесь лично насколько эффективна и проста в использовании беспроводная зарядка
+        </div>
+        <div class="col-md-12" style="margin-bottom: 10px; margin-top: 70px; text-align: center">
+            <iframe width="736" height="415" src="http://www.youtube.com/embed/ANqxU8vxmso" frameborder="0" allowfullscreen style="border: 1px solid rgba(14, 9, 9, 0.45); box-shadow: -3px 9px 70px 1px rgba(0, 0, 0, 0.66);"></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron" style="text-align: center; margin: 100px 0">
+    <p style="font-size: 60px; padding-top: 30px">С кем мы хотим работать</p>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12" style="margin-bottom: 40px">
+            <div class="col-md-1">
+                <img src="icons/linea_ecommerce_1.0/_SVG/ecommerce_cart.svg" width="70px" height="70px" alt="dollar">
+            </div>
+            <div class="col-md-5">
+                <p class="big_p">Интернет магазины</p>
+                <p>Для Вас мы предоставляем качественные фото продукта и его описание</p>
+            </div>
+            <div class="col-md-1">
+                <img src="icons/linea_ecommerce_1.0/_SVG/ecommerce_bag.svg" width="70px" height="70px" alt="dollar">
+            </div>
+            <div class="col-md-5">
+                <p class="big_p">Владельцы розничных магазинов</p>
+                <p>Вы сможете расширить свой ассортимент популярными техническими новинками</p>
+            </div>
+        </div>
+        <div class="col-md-12" style="margin-bottom: 40px">
+            <div class="col-md-1">
+                <img src="icons/linea_ecommerce_1.0/_SVG/ecommerce_megaphone.svg" width="70px" height="70px" alt="dollar">
+            </div>
+            <div class="col-md-5">
+                <p class="big_p">Бизнесы смежных тематик</p>
+                <p>Магазины подарков, товаров для дома, бизнес аксессуаров и не только...</p>
+            </div>
+            <div class="col-md-1">
+                <img src="icons/linea_ecommerce_1.0/_SVG/ecommerce_graph1.svg" width="70px" height="70px" alt="dollar">
+            </div>
+            <div class="col-md-5">
+                <p class="big_p">Крупные розничные сети</p>
+                <p>Имеем опыт работы с крупным бизнесом</p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-1">
+                <img src="icons/linea_ecommerce_1.0/_SVG/ecommerce_graph_increase.svg" width="70px" height="70px" alt="dollar">
+            </div>
+            <div class="col-md-11">
+                <p class="big_p">Начинающие предприниматели</p>
+                <p>Покажем, расскажем, научим</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron" style="text-align: center; margin: 100px 0">
+    <p style="font-size: 60px; padding-top: 30px">У Вас остались вопросы?</p>
+    <p style="text-align: center; font-size: 2em">Задайте их нам</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="form-group">
+                <input type="text" class="form-control input-md" id="usr1" placeholder="Имя" required="required">
+            </div>
+            <div class="form-group">
+                <input type="phone" class="form-control input-md" id="phone1" placeholder="Номер телефона" required="required">
+            </div><br>
+            <div class="form-group">
+                <label for="comment"><span style="font-size: 20px">Введите вопрос</span></label>
+                <textarea class="form-control" rows="5" id="comment1" required="required"></textarea>
+            </div>
+            <div>
+                <p style="text-align: center; margin-top: 80px; margin-bottom: 30px"><a href="#s" id="send_comment" class="button1">ОТПРАВИТЬ</a></p>
+            </div>
+			<div class="messages5"></div>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron" style="text-align: center; margin-top: 100px; margin-bottom: 40px">
+    <p style="font-size: 60px; padding-top: 30px">Оптовые цены</p>
+</div>
+
+<div class="container">
+    <div class="col-md-12 div-center2" style="margin-bottom: 120px; text-align: center">
+        <form class="form-inline">
+            <div class="form-group margin-form-group" style="margin-bottom: 30px">
+                <input type="name" class="form-control input-md" id="name2" placeholder="Имя" required="required">
+            </div>
+            <div class="form-group margin-form-group" style="margin-bottom: 30px">
+                <input type="phone" class="form-control input-md" id="phone2" placeholder="Телефон" required="required">
+            </div>
+            <div class="form-group margin-form-group" style="margin-bottom: 30px">
+                <input type="email" class="form-control input-md" id="email2" placeholder="E-mail" required="required">
+            </div>
+        </form>
+    <button type="button" id="send5" class="btn btn-success btn-md" style="box-shadow: 0 0 10px rgba(128, 128, 128, 0.5)"><b>Получить оптовую цену</b></button>
+	<div class="messages5"></div>
+    </div>
+	
+</div>
+
+
+    <div style="background-color:#333; padding: 100px 0; color: #ffffff; margin-top: -30px">
+        <table border="0" cellpadding="1" cellspacing="1" align="center" style="width: 90%">
+            <tr>
+                <td valign="top">
+                    <blockquote><span style="font-size: 30px; text-transform: uppercase">Наши контакты</span></blockquote>
+                    <ul style="list-style: none">
+                        <li><i class="glyphicon glyphicon-home" style="margin-right: 15px; padding: 0.5em 0"> </i>ООО "СКИ Гагарин"</li>
+                        <li><i class="glyphicon glyphicon-road" style="margin-right: 15px; padding: 0.5em 0"> </i>г. Киев, ул. Стройиндустрии 8б</li>
+                        <li><i class="glyphicon glyphicon-envelope" style="margin-right: 15px; padding: 0.5em 0"> </i>ИНН 388057626503</li>
+                    </ul>
+                </td>
+                <td valign="top">
+                    <blockquote><span style="font-size: 30px; text-transform: uppercase">Связаться с нами</span></blockquote>
+                        <span style="padding-left: 50px"><i class="glyphicon glyphicon-earphone" style="margin-right: 15px; padding: 0.5em 0"></i>(067) 44-888-55</span><br>
+                    <span style="padding-left: 50px"><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal90" style="box-shadow: 0 0 10px rgba(128, 128, 128, 0.5); margin-top: 5px"><b>Заказать консультацию</b></button></span>
+                        <div id="myModal90" class="modal fade" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content" style="margin-top: 25%">
+											<div class="modal-header" style="text-align: center">
+												<p class="modal-title" style="font-size: 25px; padding-left: 10px; color: black">Закажите звонок</p>
+												<p style="margin-top: 12px; margin-bottom: -2px; padding-left: 10px; color: black">Мы Вам перезвоним в течении часа.</p>
+											</div>
+											<div class="modal-body" style="padding-left: 25px; padding-right: 25px">
+												<div class="form-group" style="margin-top: 15px">
+													<input style="background: #f8f8f8;" type="text" name="form-username" placeholder="Имя..." class="form-control input-lg" id="form-username1" required="required">
+												</div>
+												<div class="form-group" style="margin-bottom: 15px">
+													<input style="background: #f8f8f8;" type="phone" name="form-phone" placeholder="Номер телефона..." class="form-control input-lg" id="form-phone1" required="required">
+												</div>
+												<button type="submit" class="btn777" id="send1" style="margin-bottom: 15px">Заказать звонок</button>
+											</div>
+											<div class="messages1"></div>
+										</div>
+									</div>
+								</div>
+                </td>
+                <td valign="top">
+                    <blockquote><span style="font-size: 30px; text-transform: uppercase">Подписаться на нас</span></blockquote>
+                    <span style="padding-left: 50px"><iframe style="border: 1px solid rgba(14, 9, 9, 0.45); box-shadow: -3px 9px 70px 1px rgba(0, 0, 0, 0.66)" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FiGadget.ua%2F&tabs&width=350&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="350" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></span><br>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>

@@ -1,0 +1,679 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>iGadget</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="applisalonion/x-javascript">
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" type="text/css"
+          href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="css/wholesale.css" rel='stylesheet' type='text/css'/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Nosifer' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 900);
+            });
+        });
+    </script>
+    <script src="js/jquery.leoslider.js"></script>
+    <script src="js/main.js"></script>
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8&appId=365693990487298";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+</head>
+<body>
+<div class="main-header" id="house">
+    <div class="header-strip">
+
+        <div class="container">
+            <div class="col-md-1">
+                <img class="logo-img" src="images/ig.png">
+            </div>
+            <div class="col-md-4 text-center"><p class="location">Импорт и оптовая продажа
+                техники и аксессуаров</p></div>
+            <div class="col-md-4">
+                <div class="title-second">
+                    <p>Мы работаем без выходных</p>
+                    <p>Звоните ежедневно с 09.00 до 20.00</p>
+                    <p>Тел: 067-44-888-55 Киев</p>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <div class="title-third">
+                    <p>Оперативно доставляем по всей Украине</p>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="header-top">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+            <div id="home-video" poster="images/home-video.mp4">
+                <img class="banner-img" src="images/banner.png">
+            </div>
+            <div class="tittle-text">
+                <p>Оптовая продажа универсальных беспроводных</p>
+                <p> зарядных устройств для всех видов телефонов </p>
+
+                <div class="brand">
+                    <ul>
+                        <li><a href="#"><i style="color: grey" class="fa fa-apple fa-5x" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="#"><i style="color: #0e82a7" class="fa fa-windows fa-3x"
+                                           aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i style="color: green" class="fa fa-android fa-3x" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="padding-top-40">Высоко маржинальный продукт который уже привлёк </p>
+                <p>внимание потребителей и продолжает набирать популярность </p>
+            </div>
+            <div class="container-form">
+                <form id="contact" class="test" action="" method="post" novalidate>
+                    <h3>Оставьте заявку и получите
+                        наше оптовое предложение</h3>
+                    <div class="form-group"><input type="text" class="form-control" placeholder="Ваще имя *"
+                                                   id="name-contact" required
+                                                   data-validation-required-message="Введите Ваше имя">
+                        <p class="help-block text-danger"></p></div>
+
+                    <div class="form-group">
+                        <input   type="tel" class="form-control"
+                                 placeholder="(063) 159 22 32 *"
+                                 id="phone-contact"
+                                 data-validation-required-message="Введите Ваш номер телефона в формате (только цифры)  (063) 159 22 32" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}">
+                        <p class="help-block text-danger"></p></div>
+
+
+                    <div class="form-group"><input type="email" class="form-control" placeholder="Ваш email *"
+                                                   id="email-contact" required
+                                                   data-validation-required-message="Введите Ваш email адресс.">
+                        <p class="help-block text-danger"></p></div>
+                    <fieldset>
+                        <button name="submit" class="btn" type="submit" id="contact-submit" data-submit="...Sending">
+                            Отправить
+                        </button>
+                    </fieldset>
+                    <div class="text-center ">
+                        <div id="success-contact"></div>
+                        <button data-toggle="modal" style="background: transparent" data-target="#politic"><span
+                                style="color: black" class="politic-text"> Политика конфиденциальности </span></button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<section class="bg-light-gray">
+    <div id="benefits" class="wthree-grids">
+        <div class="container">
+            <div class="col-md-12">
+                <h1 class="section-title-h1 padding-bottom-30">Сотрудничая с нами Вы приобретаете:
+                </h1>
+            </div>
+            <div class="col-md-6 wthree-right wow fadeInLeft animated animated animated" data-wow-delay=".5s"
+                 style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+
+                <div class="wthree-right-grids">
+                    <div class="wthree-right-grid right-top">
+                        <div class="design-left"></div>
+                        <span class="fa-stack fa-lg fa-number">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-inverse fa-stack-1x"><i class="fa fa-money" aria-hidden="true"></i></i>
+    </span>
+                        <div class="design-right">
+                            <h5>Высокую прибыль и уникальные условия
+
+                            </h5>
+                            <p>Мы напрямую работаем с фабриками производителями и имеем долгие отношения с ними по ряду
+                                продуктов.
+                                Поэтому мы можем предложить Вам самые низкие цены на качественный продукт и предоставить
+                                гарантийный сервис</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="wthree-right-grid right-middle-top">
+                        <div class="design-left easy">
+                        </div>
+                        <span class="fa-stack fa-lg fa-number">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-inverse fa-stack-1x">5</i>
+    </span>
+                        <div class="design-right">
+                            <h5>
+                                Минимальный заказ от 5-ти единиц
+                            </h5>
+                            <p>Мы стремимся сделать Ваше взаимодействие с нами максимально комфортным
+                            </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="wthree-right-grid right-middle">
+                        <div class="design-left developer"></i></div>
+                        <span class="fa-stack fa-lg fa-number">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-inverse fa-stack-1x"><i class="fa fa-university" aria-hidden="true"></i></i>
+    </span>
+                        <div class="design-right">
+                            <h5>Постоянное наличие на складе в Киеве
+                            </h5>
+                            <p>Мы храним на складе достаточный товарный запас, а благодаря налаженным логистическим
+                                каналам имеем возможность оперативно реагировать на колебания спроса и пополнять склад
+                            </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 wthree-right wow fadeInLeft animated animated animated" data-wow-delay=".5s"
+                 style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+
+                <div class="wthree-right-grids">
+                    <div class="wthree-right-grid right-top">
+                        <div class="design-left"></div>
+                        <span class="fa-stack fa-lg fa-number">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-inverse fa-stack-1x"><i class="fa fa-gift" aria-hidden="true"></i></i>
+    </span>
+                        <div class="design-right">
+                            <h5>Регулярные акции и подарки для Ваших покупателей
+
+                            </h5>
+                            <p>Покупая у нас Ваше предложение всегда будет выгодно отличаться от предложений Ваших
+                                конкурентов. Вы будете всегда на шаг впереди.
+                            </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="wthree-right-grid right-middle-top">
+                        <div class="design-left easy">
+                        </div>
+                        <span class="fa-stack fa-lg fa-number">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-inverse fa-stack-1x"><i class="fa fa-credit-card" aria-hidden="true"></i></i>
+    </span>
+                        <div class="design-right">
+                            <h5>
+                                Гибкие условия оплаты
+                            </h5>
+                            <p>Мы предлагаем Вам наилучшие цены на наш продукт на условиях выкупа.
+                                Также мы можем предоставить Вам продукт на реализацию</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="wthree-right-grid right-middle">
+                        <div class="design-left developer"></i></div>
+                        <span class="fa-stack fa-lg fa-number">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-inverse fa-stack-1x"><i class="fa fa-spinner" aria-hidden="true"></i>
+</i>
+    </span>
+                        <div class="design-right">
+                            <h5>Ваш индивидуальный ассортимент
+                            </h5>
+                            <p>Мы можем предложить Вам дизайн устройства который будет только у Вас или брендировать
+                                продукт Вашей ТМ
+                            </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="wthree-right-grid right-middle">
+                    <div style="text-align:center;" class=" developer"></i></div>
+                    <span class="fa-stack fa-lg fa-number hide">
+      <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-inverse fa-stack-1x"><i class="fa fa-truck" aria-hidden="true"></i>
+</i>
+    </span>
+                    <div class="design-right">
+                        <h5 class="padding-top-15 margin-left-100">Мы можем найти в Китае и привезти любой товар под Ваш заказ
+
+                        </h5>
+                        <p class="margin-left-60">Мы имеем своих представителей в Китае, которые могут найти производителя необходимого товара,
+                            провести переговоры на родном языке производителя и добиться лучших условий
+
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+<section class="text-center">
+    <div class="col-lg-8 col-lg-offset-2 ">
+        <h1 class="padding-bottom-20 guarantee-title">Гарантия качества
+        </h1>
+    </div>
+    <div class="col-lg-8 col-lg-offset-2">
+        <h2 class="padding-bottom-20">Все беспроводные зарядные устройства перед отправкой нашим клиентам проходят четыре уровня проверки:
+        </h2>
+        <ul class="no-marker padding-bottom-20 list-style-list text-left font-size-list">
+            <li class="one">две проверки качества продукции на этапе производства</li>
+            <li class="second">наши представители проверяют партию перед отправкой продукции в Украину</li>
+            <li class="third">перед отправкой клиенту мы проверяем каждую единицу, независимо будь то розничный или оптовый покупатель</li>
+
+        </ul>
+        <h2 class="padding-bottom-20">Именно поэтому, на все наши устройства, мы предоставляем
+        </h2>
+        <h1 class="padding-bottom-20 guarantee-title">Гарантия один год!
+        </h1>
+        <ul class="no-marker font-size-list">
+            <li>Работая с нами Вы всегда можете быть уверены,
+                что Ваши покупатели получат качественный продукт</li>
+        </ul>
+    </div>
+</section>
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="section-title-box padding-bottom-20">Наш ассортимент
+                беспроводных зарядных устройств
+            </h1>
+            <div class=""><a href="#">
+            </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <img src="images/roundicons.png" class="img-responsive" alt="">
+                <div class="portfolio-caption">
+                    <a data-toggle="modal" data-target="#myModal" class="characteristic">Характеристики продукта</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <img src="images/startup-framework.png" class="img-responsive" alt="">
+                <div class="portfolio-caption">
+                    <a data-toggle="modal" data-target="#myModal2" class="characteristic">Характеристики продукта</a>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <a  class="btn width-btn"  href="#form-price">Получить оптовую цену</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="video" class=" padding-bottom-100">
+    <div class="col-md-12">
+        <div class="container">
+            <div class="row text-center">
+                <h1 class="section-title-h1">Это 100% захотят у Вас купить и цена не будет играть главную роль
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class=" video  padding-bottom-100 text-center ">
+        <iframe style="border: 1px solid rgba(14, 9, 9, 0.45);" width="760" height="415"
+                src="https://www.youtube.com/embed/ANqxU8vxmso" frameborder="0"
+                allowfullscreen></iframe>
+    </div>
+</section>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Характеристики продукта
+                </h4>
+            </div>
+            <div class="modal-body">
+                <ul class="no-marker text-left">
+                    <li class="padding-bottom-20 text-center bold"> Скорость зарядки батареи от 0 до 100% - 1,5 часа</li>
+                    <li class="padding-bottom-10 bold"> Характеристики продукта:</li>
+                    <li> DC 5V 2A / DV 5V 1.5A</li>
+                    <li> размер без упаковки: 76*76*6mm</li>
+                    <li> размер в упаковке: 119*119*20mm</li>
+                    <li> вес и без упаковки 60g</li>
+                    <li> вес в упаковке 90g</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Характеристики продукта
+                </h4>
+            </div>
+            <div class="modal-body">
+                <ul class="text-left no-marker">
+                    <li class="padding-bottom-20 text-center bold">С корость зарядки батареи от 0 до 100% - 1,5 часа</li>
+                    <li class="padding-bottom-10 bold">     Характеристики продукта:</li>
+                    <li> DC 5V 2A / DV 5V 1.5A</li>
+                    <li>  размер без упаковки: 100*100*9.5mm</li>
+                    <li>размер в упаковке: 128*128*30mm</li>
+                    <li>   вес и без упаковки 74g</li>
+                    <li>   вес в упаковке 122g</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<section>
+    <div class="col-md-12 text-center padding-bottom-20 bold">
+        <h1 class="padding-bottom-30 section-title-h1">С кем мы хотим работать</h1>
+    </div>
+    <div class="col-md-4 text-center padding-bottom-20">
+        <h2 class="padding-bottom-10 bold font-size-h2">Интернет магазины</h2>
+        <img class="mark1" src="images/its.jpg">
+        <h3 class="padding-top-15 font-size-h3"><i class="fa fa-check-square-o" aria-hidden="true"></i> Для Вас мы предоставляем
+            качественные фото продукта и его описание</h3>
+    </div>
+    <div class="col-md-4 text-center padding-bottom-20">
+        <h2 class="padding-bottom-10 bold font-size-h2"> Владельцы розничных магазинов
+            техники и аксессуаров</h2>
+        <img class="mark1" src="images/05.jpg">
+        <h3 class="font-size-h3"><i class="fa fa-check-square-o" aria-hidden="true"></i> Вы сможете расширить свой
+            ассортимент популярными техническими новинками</h3>
+    </div>
+    <div class="col-md-4 text-center padding-bottom-20">
+        <h2 class="padding-bottom-10 bold font-size-h2"> Бизнесы смежных тематик</h2>
+        <img class="mark1" src="images/bus.jpg">
+        <h3 class="padding-top-15 font-size-h3"><i class="fa fa-check-square-o" aria-hidden="true"></i> Магазины подарков, товаров
+            для дома, бизнес аксессуаров и не только...</h3>
+    </div>
+    <div class="col-md-6 text-center padding-bottom-20">
+        <h2 class="padding-bottom-10 bold font-size-h2"> Крупные розничные сети</h2>
+        <img class="mark2" src="images/net.jpg">
+        <h3 class="padding-top-15 font-size-h3"><i class="fa fa-check-square-o" aria-hidden="true"></i>Имеем опыт работы с крупным
+            бизнесом</h3>
+    </div>
+    <div class="col-md-6 text-center padding-bottom-20">
+        <h2 class="padding-bottom-10 bold font-size-h2"> Начинающие предприниматели</h2>
+        <img class="mark2" src="images/pr.jpg">
+        <h3 class="padding-top-15 font-size-h3"><i class="fa fa-check-square-o" aria-hidden="true"></i>Покажем, расскажем, научим</h3>
+    </div>
+</section>
+
+<section class="bg-light-gray" id="form-price">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="modal-dialog size-modal">
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h3 class="modal-title">Продавая наши беспроводные зарядные устройства сейчас
+
+                    </h3>
+                    <p>Вы можете работать с неприлично большой наценкой
+
+                    </p>
+                </div>
+
+                <div class="modal-body">
+
+                    <form role="form" name="sentMessage"  id="contactForm" class="login-form" novalidate>
+                        <div class="form-group">
+                            <label class="sr-only" for="name-contactForm">Имя</label>
+                            <input type="text" placeholder="Имя"
+                                   data-validation-required-message="Введите Ваше имя" class="form-username form-control" required id="name-contactForm">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="phone-contactForm">Номер телефона</label>
+                            <input type="tel"  placeholder="Номер телефона..."
+                                   class="form-password form-control" required id="phone-contactForm" data-validation-required-message="Введите Ваш номер телефона в формате (только цифры)  (063) 159 22 32" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}">
+                            <p class="help-block text-danger"></p>
+
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" >Email</label>
+                            <input type="email" placeholder="Ваш email..."
+                                   class="form-email form-control" required id="emeil-contactForm" data-validation-required-message="Введите Ваш номер email адресс">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div id="success-contactForm"></div>
+                        <button type="submit" class="btn">Получить оптовую цену</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<div class="footer">
+    <div class="container girl">
+        <div class="footer-top">
+            <div class="col-md-4 amet-sed rest">
+                <h4>Наши контакты</h4>
+                <ul class="social">
+                    <li><i class="glyphicon glyphicon-home"> </i>ООО "СКИ Гагарин"</li>
+                    <li><i class="glyphicon glyphicon-home"> </i>г. Киев, ул. Стройиндустрии 8Б"</li>
+                    <li class="tele-phone"><i class="glyphicon glyphicon-earphone"> </i> +(380)-67-44-888-55</li>
+                    <li class="mail"><i class="glyphicon glyphicon-envelope"></i>
+                        ИНН 388057626503
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 amet-sed amet-medium">
+                <h4>Заказать звонок</h4>
+                <div class="container-form-second">
+
+                    <form id="contact-form" class="contact-footer login-form" role="form" name="sentMessage" novalidate>
+                        <div class="form-group"><input type="text" class="form-control" placeholder="Ваще имя *"
+                                                       id="name-contact-form" required
+                                                       data-validation-required-message="Введите Ваше имя">
+                            <p class="help-block text-danger"></p></div>
+
+                        <div class="form-group">
+                            <input type="tel" class="form-control"
+                                   placeholder="(063) 159 22 32 *"
+                                   id="phone-contact-form"
+                                   data-validation-required-message="Введите Ваш номер телефона в формате (только цифры)  (063) 159 22 32" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}">
+                            <p class="help-block text-danger"></p></div>
+
+                        <div id="success-contact-form"></div>
+                        <button type="submit" class="btn">Заказать звонок</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 amet-sed ">
+                <h4>Подпишись на нас</h4>
+                <div class="fb-page" data-href="https://www.facebook.com/iGadget.ua" data-small-header="false"
+                     data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/iGadget.ua" class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/iGadget.ua">Полезные Гаджеты</a></blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--start-smooth-scrolling-->
+
+<a href="#house" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover"
+                                                                          style="opacity: 1;"> </span></a>
+<script src="js/bootstrap.js"></script>
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body ">
+
+                            <img class="img-responsive img-centered" src="images/roundicons-free.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <img class="img-responsive img-centered" src="images/roundicons-free(1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="politic" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span>
+                            <span
+                                    class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="politic-label"> Политика конфиденциальности </h4></div>
+                    <div class="modal-body">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group politic-list">
+                                <div class=""><h3 class="text-center"> 1. Защита данных</h3>
+                                    <ul class="list-group">
+                                        <li class="list-group-item"> Администрация сайта (далее Сайт) не может передать
+                                            или
+                                            раскрыть информацию предоставленную пользователем (далее Пользователь) при
+                                            регистрации и использовании функций сайта третьим лицам, кроме случаев,
+                                            описанных
+                                            законодательством страны, на территории которой пользователь ведет свою
+                                            деятельность.
+                                        </li>
+                                    </ul>
+                                    <h3 class="aboutText text-center">2. Получение персональной информации</h3>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Сайт оставляет за собой право потребовать
+                                            доказательства
+                                            идентичности в онлайн или офлайн режимах.
+                                        </li>
+                                    </ul>
+                                    <h3 class="aboutText text-center"> 3. Использование персональной информации</h3>
+                                    <ul class="list-group">
+                                        <li class="list-group-item"> Сайт использует личную информацию Пользователя для
+                                            обслуживания и для улучшения качества предоставляемых услуг. Сайт прилагает
+                                            все
+                                            усилия для сбережения в сохранности личных данных Пользователя. Личная
+                                            информация
+                                            может быть раскрыта в случаях, описанных законодательством, либо когда
+                                            администрация
+                                            сочтет подобные действия необходимыми для соблюдения юридической процедуры,
+                                            судебного распоряжения или легального процесса необходимого для работы
+                                            Пользователя
+                                            с Сайтом. В других случаях, ни при каких условиях, информация, которую
+                                            Пользователь
+                                            передает Сайту, не будет раскрыта третьим лицам.
+                                        </li>
+                                    </ul>
+                                    <h3 class="aboutText text-center"> 4. Контроль персональной информации</h3>
+                                    <ul class="list-group">
+                                        <li class="list-group-item"> Для контроля персональной информации в Сайте
+                                            реализованы
+                                            механизмы верификации личных данных. Ответственность за любые последствия
+                                            предоставления недостоверных данных лежит на Пользователе. В случае, если
+                                            некоторые
+                                            данные изменились, Пользователь обязан исправить данные в системе
+                                            самостоятельно,
+                                            либо связаться со службой поддержки для внесения корректировок.
+                                        </li>
+                                    </ul>
+                                    <h3 class="aboutText text-center"> 5. Ссылки</h3>
+                                    <ul class="list-group">
+                                        <li class="list-group-item"> На сайте могут содержаться ссылки на другие сайты.
+                                            Сайт не
+                                            несет ответственности за содержание, качество и политику безопасности этих
+                                            сайтов.
+                                            Данное заявление о конфиденциальности относится только к информации,
+                                            размещенной
+                                            непосредственно на сайте.
+                                        </li>
+                                    </ul>
+                                    <h3 class="aboutText text-center">7. Безопасность</h3>
+                                    <ul class="list-group">
+                                        <li class="list-group-item"> Сайт обеспечивает безопасность учетной записи
+                                            Пользователя
+                                            от несанкционированного доступа.
+                                        </li>
+                                    </ul>
+                                    <h3 class="aboutText text-center"> 8. Уведомления об изменениях</h3>
+                                    <ul class="list-group">
+                                        <li class="list-group-item"> Сайт оставляет за собой право вносить изменения в
+                                            Политику
+                                            конфиденциальности без дополнительных уведомлений. Нововведения вступают в
+                                            силу с
+                                            момента их опубликования. Пользователи могут отслеживать изменения в
+                                            Политике
+                                            конфиденциальности самостоятельно.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $().UItoTop({easingType: 'easeOutQuart'});
+    });
+</script>
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/mail-wholesale.js"></script>
+</body>
+</html>
