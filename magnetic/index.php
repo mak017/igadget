@@ -698,7 +698,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script async src="../bootstrap/js/bootstrap.min.js"></script>	
-	<script async type="text/javascript" src="../js/script.js?v1"></script>	
+	<script async type="text/javascript" src="../js/script.min.js?v1"></script>	
 	<script type="text/javascript" src="../js/jquery.maskedinput.min.js"></script>
 	<script async type="text/javascript" src="../js/carousel.min.js?v1"></script>
 

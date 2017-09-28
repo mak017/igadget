@@ -4,7 +4,7 @@
 function send_mail($subject, $message, $email = 'Korn.vlad80@gmail.com')
 {
     $to      = $email;
-    $from    = 'no-reply@magnetic.igadget.me';
+    $from    = 'no-reply@luna.igadget.me';
     $subject = $subject;
     $subject = '=?utf-8?b?' . base64_encode($subject) . '?=';
     $headers = "Content-type: text/html; charset=\"utf-8\"\r\n";
@@ -22,7 +22,7 @@ $message = $_POST['message'] ? $_POST['message'] : '-';
 
 
 if( !empty($_POST['phone'])) {
-	$email_subject = "Заявка с сайта magnetic";
+	$email_subject = "Заявка с сайта luna";
 	
 	$ref = 'Прямой вход';
 	$url_from = 'Неизвестно';

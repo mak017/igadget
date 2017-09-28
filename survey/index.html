@@ -98,16 +98,15 @@
   <!-- NAVBAR -->
 
   <header class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand navbar-brand-solomon" href="#"><span class="span-brand-solomon">I</span>Gadget</a>
-      </div>
-      <div class="header-text">
-        В конце опроса вы получите <span>персональную скидку</span><br>
-        на беспроводную зарядку и <span>дополнительные бонусы</span>
-      </div>
-      <div class="header-btn">
-        <button type="button" class="btn122" data-toggle="modal" data-target="#myModal70">СВЯЗАТЬСЯ С НАМИ</button>
-      </div>
+    <div class="navbar-header">
+      <a class="navbar-brand navbar-brand-solomon" href="/luna/"><span class="span-brand-solomon">I</span>Gadget</a>
+    </div>
+    <div class="header-text">
+      В конце опроса вы получите <span>персональную скидку</span><br> на беспроводную зарядку и <span>дополнительные бонусы</span>
+    </div>
+    <div class="header-btn">
+      <button type="button" class="btn122" data-toggle="modal" data-target="#myModal70">СВЯЗАТЬСЯ С НАМИ</button>
+    </div>
   </header>
 
   <section class="survey">
@@ -115,20 +114,20 @@
       <div class="slide slide1" id="slide1">
         <p class="question">Насколько часто вы пользуетесь своим смартфоном в течении дня и как часто его заряжаете?</p>
         <div class="progress">
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20"
-          aria-valuemin="0" aria-valuemax="100" style="width:20%">20%</div>
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+            style="width:20%">20%</div>
         </div>
         <div class="row options">
-          <div class="option selected">
+          <div class="option" data-option="often">
             <p><span>Очень часто пользуюсь</span> смартфоном, ставлю на зарядку несколько раз в день</p>
             <div class="radio-btn"></div>
           </div>
-          <div class="option">
+          <div class="option" data-option="moderately">
             <p><span>Умеренно пользуюсь</span> смартфоном, подключаюсь к зарядке 1-2 раза в день
             </p>
             <div class="radio-btn"></div>
           </div>
-          <div class="option">
+          <div class="option" data-option="rarely">
             <p>Пользуюсь смартфоном <span>не часто</span>, заряжаю раз в два дня</p>
             <div class="radio-btn"></div>
           </div>
@@ -146,23 +145,23 @@
       <div class="slide slide2" id="slide2">
         <p class="question">Сколько времени вы проводите за рулем автомобиля ежедневно?</p>
         <div class="progress">
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
-          aria-valuemin="0" aria-valuemax="100" style="width:40%">40%</div>
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+            style="width:40%">40%</div>
         </div>
         <div class="row options">
-          <div class="option">
+          <div class="option" data-option="more1h">
             <p>Более 1 часа</p>
             <div class="radio-btn"></div>
           </div>
-          <div class="option selected">
+          <div class="option" data-option="less1h">
             <p>Меньше, чем 1 час</p>
             <div class="radio-btn"></div>
           </div>
-          <div class="option">
+          <div class="option" data-option="fewtimes">
             <p>Несколько раз в неделю</p>
             <div class="radio-btn"></div>
           </div>
-          <div class="option">
+          <div class="option" data-option="nope">
             <p>Не пользуюсь автомобилем</p>
             <div class="radio-btn"></div>
           </div>
@@ -177,19 +176,19 @@
       <div class="slide slide3" id="slide3">
         <p class="question">Как вы проводите большую часть своего времени?</p>
         <div class="progress">
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60"
-          aria-valuemin="0" aria-valuemax="100" style="width:60%">60%</div>
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+            style="width:60%">60%</div>
         </div>
         <div class="row options">
-          <div class="option">
+          <div class="option" data-option="inmotion">
             <p>Преимущественно <span>нахожусь в движении</span> (встречи, поездки, перемещение по городу, отдых)</p>
             <div class="radio-btn"></div>
           </div>
-          <div class="option selected">
+          <div class="option" data-option="static">
             <p>Большую часть времени <span>нахожусь на одном месте</span> (рабочее место, дом)</p>
             <div class="radio-btn"></div>
           </div>
-          <div class="option">
+          <div class="option" data-option="differently">
             <p>Бывает по-разному</p>
             <div class="radio-btn"></div>
           </div>
@@ -201,9 +200,113 @@
           </div>
         </div>
       </div>
+      <div class="slide slide4 row" id="slide4">
+        <p class="question">Какого цвета зарядное устройство вы собираетесь приобрести?</p>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+            style="width:80%">80%</div>
+        </div>
+        <div class="options col-sm-3">
+          <div class="option" data-option="white">
+            <p>Белого</p>
+            <div class="radio-btn"></div>
+          </div>
+          <div class="option" data-option="black">
+            <p>Черного</p>
+            <div class="radio-btn"></div>
+          </div>
+        </div>
+        <div class="img-wrap col-sm-9">
+          <img src="/phones/question4.png" alt="" class="img-responsive">
+        </div>
+        <div class="buttons-wrap">
+          <div class="buttons">
+            <button class="btn-back">Назад</button>
+            <button class="btn-buy btn-next">Далее</button>
+          </div>
+        </div>
+      </div>
+      <div class="slide slide5" id="slide5">
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+            style="width:90%">90%</div>
+        </div>
+        <div class="options row">
+          <div class="option result">
+            <p><span>Мы подобрали комплект товаров, который вам подойдет, исходя из ваших ответов</span></p>
+            <div class="products">
+              <div class="images">
+              </div>
+              <div class="cost">
+                <div class="regular-cost"></div>
+                <div class="cost-text">всего за</div>
+                <div class="discount-cost"></div>
+              </div>
+            </div>
+          </div>
+          <div class="features">
+            <div class="option">
+              <i class="fa fa-credit-card" aria-hidden="true"></i>
+              <p>Бесплатная доставка при оплате на карту</p>
+            </div>
+            <div class="option">
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <p>Гарантия 1 год.<br> Возможен возврат товара в течении 7 дней</p>
+            </div>
+            <div class="option">
+              <i class="fa fa-gift" aria-hidden="true"></i>
+              <p>Дополнительный ресивер в подарок</p>
+            </div>
+          </div>
+        </div>
+        <div class="form-wrap">
+          <form method="POST" action="/luna/send_mail.php">
+            <input type="hidden" name="head" value="">
+            <input type="tel" name="phone" placeholder="Введите номер телефона" required></input>
+            <button class="btn-buy">Оформить заказ</button>
+          </form>
+          <span>*При общении с менеджером вы можете изменить свой заказ</span>
+        </div>
+        <div class="timer-wrap">
+          <div class="timer">
+          </div>
+          <div class="timer-text">
+            <p><span>Данная скидка и бонусы сгорит через 10 минут!</span></p>
+            <p>Оставьте заявку прямо сейчас, чтобы зафиксировать цену и гарантированно сэкономить!</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
+  <div id="myModal70" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="text-align: center">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <p class="modal-title" style="font-size: 20px; color: #3d3d3c;">Закажите звонок</p>
+          <p class="solomon-light" style="margin-top: 12px; margin-bottom: -2px; color: #3d3d3c;">Мы свяжемся с Вами в течении часа</p>
+          <hr>
+          <p class="text-center" style="color: #3d3d3c; margin-top: 10px;">График работы: ежедневно с 09.00 до 20.00</p>
+          <p class="text-center" style="color: #3d3d3c; margin-top: 10px;">Тел.: (067) 44-888-55</p>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="send_mail.php">
+            <input type="hidden" name="head" value="Заказ звонка">
+            <div class="form-group" style="margin-top: 15px">
+              <input style="background: #f8f8f8;" type="text" name="name" placeholder="Имя..." class="form-control input-lg" id="form-username"
+                required="required">
+            </div>
+            <div class="form-group" style="margin-bottom: 15px">
+              <input style="background: #f8f8f8;" type="phone" name="phone" placeholder="Номер телефона..." class="form-control input-lg"
+                id="form-phone" required="required">
+            </div>
+            <button type="submit" class="btn777" style="margin-bottom: 15px">ЗАКАЗАТЬ ЗВОНОК</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -212,9 +315,13 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script async src="/bootstrap/js/bootstrap.min.js"></script>
-  <script async type="text/javascript" src="/js/script_original.js?v1"></script>
+  <link rel="stylesheet" type="text/css" href="/css/jquery.countdown.css">
+  <script type="text/javascript" src="/js/jquery.plugin.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.countdown.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.countdown-ru.js"></script>
+  <script async type="text/javascript" src="/js/script.min.js?v1"></script>
   <script type="text/javascript" src="/js/jquery.maskedinput.min.js"></script>
-  <script async type="text/javascript" src="/js/carousel.js?v1"></script>
+  <script async type="text/javascript" src="/js/carousel.min.js?v1"></script>
   <!-- <script async type="text/javascript" src="js/ouibounce.js"></script> -->
   <!-- <script async type="text/javascript" src="/send/script.js"></script> -->
 

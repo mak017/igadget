@@ -1,22 +1,3 @@
-<?php 
-session_start();
-if(!isset($_SESSION['utms'])) {
-    $_SESSION['utms'] = array();
-    $_SESSION['utms']['utm_source'] = '';
-    $_SESSION['utms']['utm_medium'] = '';
-    $_SESSION['utms']['utm_term'] = '';
-    $_SESSION['utms']['utm_content'] = '';
-    $_SESSION['utms']['utm_campaign'] = '';
-}
-$_SESSION['utms']['utm_source'] = $_GET['utm_source'];
-$_SESSION['utms']['utm_medium'] = $_GET['utm_medium'];
-$_SESSION['utms']['utm_term'] = $_GET['utm_term'];
-$_SESSION['utms']['utm_content'] = $_GET['utm_content'];
-$_SESSION['utms']['utm_campaign'] = $_GET['utm_campaign'];
-session_id();
-include ('config.php');
-$price_old=floor(($price_new/(100-$skidka))*100);
-?>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -42,9 +23,9 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 	<meta name="keywords" content="беспроводная зарядка, беспроводная зарядка купить, qi зарядка, беспроводное зарядное устройство для телефона, беспроводная зарядка самсунг, как работает беспроводная зарядка, безпровідна зарядка"/>
 	<meta name="description" content="Беспроводное зарядное устройство LUNA, покупайте беспроводную зарядку для Samsung, iPhone, Windows Phone по ОПТОВОЙ цене! (067) 44-888-55" />
 	
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="bogus">
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css" media="bogus">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="bogus">
-	<link rel="stylesheet" type="text/css" href="css/style.css?v2" media="bogus">
+	<link rel="stylesheet" type="text/css" href="/css/style.css?v2" media="bogus">
 	<link rel='stylesheet' type='text/css' href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" media="bogus">
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -52,7 +33,25 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 
 
 
-
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '217096718678071'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+ <img height="1" width="1" 
+src="https://www.facebook.com/tr?id=217096718678071&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
     (function (d, w, c) {
@@ -122,7 +121,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 	<div class="container grey main-logo-margin">
 		<div class="row">
 			<div class="item main col-sm-4">
-				<img class="phone-main-banner" src="phones/main_picture.png">
+				<img class="phone-main-banner" src="/phones/main_picture.png">
 				<p>Диск <span>быстрой</span> беспроводной <span>зарядки</span></p>
 			</div>
 			<div class="col-sm-8 slogan">
@@ -131,17 +130,17 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 			<div class="col-sm-8 work-with">
 				<p class="text-center solomon-light">работает с:</p>
 				<div class="text-center">
-					<img class="phone-logo-margin" src="phones/apple.png">
-					<img class="phone-logo-margin" src="phones/android.png">
-					<img class="phone-logo-margin" src="phones/windows.png">
+					<img class="phone-logo-margin" src="/phones/apple.png">
+					<img class="phone-logo-margin" src="/phones/android.png">
+					<img class="phone-logo-margin" src="/phones/windows.png">
 				</div>
 			</div>
 			<div class="item power col-sm-4">
-				<img class="img-responsive" src="phones/powerbank_3.png">
+				<img class="img-responsive" src="/phones/powerbank_3.png">
 				<p>Беспроводной <span>повербанк</span></p>
 			</div>
 			<div class="item auto col-sm-4 border-mobile">
-				<img class="img-responsive" src="phones/autocharger3.png">
+				<img class="img-responsive" src="/phones/autocharger3.png">
 				<p><span>Автомобильная</span> беспроводная <span>зарядка</span></p>
 			</div>
 			<div class="col-sm-4 col-sm-offset-4 text-center btn-wrap">
@@ -172,7 +171,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 				</div>
 			</div>
 			<div class="col-lg-3 col-sm-4 text-center visa-margin-bottom">
-				<span class="text-center">бесплатная доставка при оплате</span> <img class="visa-mastercard" src="phones/visa-mastercard1.png">
+				<span class="text-center">бесплатная доставка при оплате</span> <img class="visa-mastercard" src="/phones/visa-mastercard1.png">
 				<p class="solomon-light text-center below-button">доставка по Киеву и Украине</p>
 			</div>
 		</div>
@@ -206,22 +205,22 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="col-sm-4">
-						<img class="img-responsive photo-center photo-grayscale" src="phones/1.png">
+						<img class="img-responsive photo-center photo-grayscale" src="/phones/1.png">
 					</div>
 					<div class="col-sm-4">
-						<img class="img-responsive photo-center photo-grayscale" src="phones/2.png">
+						<img class="img-responsive photo-center photo-grayscale" src="/phones/2.png">
 					</div>
 					<div class="col-sm-4">
-						<img class="img-responsive photo-center photo-grayscale" src="phones/3.png">
+						<img class="img-responsive photo-center photo-grayscale" src="/phones/3.png">
 					</div>
 					<div class="col-sm-4">
-						<img class="img-responsive photo-center photo-grayscale" src="phones/4.png">
+						<img class="img-responsive photo-center photo-grayscale" src="/phones/4.png">
 					</div>
 					<div class="col-sm-4">
-						<img class="img-responsive photo-center photo-grayscale" src="phones/5.png">
+						<img class="img-responsive photo-center photo-grayscale" src="/phones/5.png">
 					</div>
 					<div class="col-sm-4">
-						<img class="img-responsive photo-center photo-grayscale" src="phones/6.png">
+						<img class="img-responsive photo-center photo-grayscale" src="/phones/6.png">
 					</div>
 				</div>
 			</div>
@@ -247,10 +246,10 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 						<div id="carousel-bounding-box">
 							<div class="carousel slide" id="myCarousel233">
 								<div class="carousel-inner">
-									<div class="active item" data-slide-number="0"><img src="phones/slider_standart_1.jpg"></div>
-									<div class="item" data-slide-number="1"><img src="phones/slider_standart_2.jpg"></div>
-									<div class="item" data-slide-number="2"><img src="phones/slider_standart_3.jpg"></div>
-									<div class="item" data-slide-number="3"><img src="phones/slider_standart_4.jpg"></div>
+									<div class="active item" data-slide-number="0"><img src="/phones/slider_standart_1.jpg"></div>
+									<div class="item" data-slide-number="1"><img src="/phones/slider_standart_2.jpg"></div>
+									<div class="item" data-slide-number="2"><img src="/phones/slider_standart_3.jpg"></div>
+									<div class="item" data-slide-number="3"><img src="/phones/slider_standart_4.jpg"></div>
 								</div>
 								<!-- Carousel nav -->
 								<a class="left carousel-control" href="#myCarousel233" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
@@ -262,14 +261,14 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 				</div>
 				<!-- Bottom switcher of slider -->
 				<ul class="hide-bullets">
-					<li class="col-xs-3"><a class="thumbnail" id="carousel-selector-0"><img src="phones/slider_standart_1.jpg"></a></li>
-					<li class="col-xs-3"><a class="thumbnail" id="carousel-selector-1"><img src="phones/slider_standart_2.jpg"></a></li>
-					<li class="col-xs-3"><a class="thumbnail" id="carousel-selector-2"><img src="phones/slider_standart_3.jpg"></a></li>					
-					<li class="col-xs-3"><a class="thumbnail" id="carousel-selector-3"><img src="phones/slider_standart_4.jpg"></a></li>
+					<li class="col-xs-3"><a class="thumbnail" id="carousel-selector-0"><img src="/phones/slider_standart_1.jpg"></a></li>
+					<li class="col-xs-3"><a class="thumbnail" id="carousel-selector-1"><img src="/phones/slider_standart_2.jpg"></a></li>
+					<li class="col-xs-3"><a class="thumbnail" id="carousel-selector-2"><img src="/phones/slider_standart_3.jpg"></a></li>					
+					<li class="col-xs-3"><a class="thumbnail" id="carousel-selector-3"><img src="/phones/slider_standart_4.jpg"></a></li>
 				</ul>
 				<!-- Bottom switcher of slider END-->
 
-				<img id="garanty-logo" src="phones/garanty_logo.png">
+				<img id="garanty-logo" src="/phones/garanty_logo.png">
 
 				<a class="btn9090 solomon-light" data-toggle="modal" data-target="#myModal99">Подробнее</a>						
 					<div id="myModal99" class="modal fade" role="dialog">
@@ -342,10 +341,10 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 						<div id="carousel-bounding-box2">
 							<div class="carousel slide" id="myCarousel299">
 								<div class="carousel-inner">
-									<div class="active item" data-slide-number="0"><img src="phones/slider_fantasy_31.jpg"></div>
-									<div class="item" data-slide-number="1"><img src="phones/slider_fantasy_21.jpg"></div>
-									<div class="item" data-slide-number="2"><img src="phones/slider_fantasy_5.jpg"></div>
-									<div class="item" data-slide-number="3"><img src="phones/slider_fantasy_4.jpg"></div>
+									<div class="active item" data-slide-number="0"><img src="/phones/slider_fantasy_31.jpg"></div>
+									<div class="item" data-slide-number="1"><img src="/phones/slider_fantasy_21.jpg"></div>
+									<div class="item" data-slide-number="2"><img src="/phones/slider_fantasy_5.jpg"></div>
+									<div class="item" data-slide-number="3"><img src="/phones/slider_fantasy_4.jpg"></div>
 								</div>
 								<!-- Carousel nav 2 -->
 								<a class="left carousel-control" href="#myCarousel299" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
@@ -357,14 +356,14 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 				</div>
 				<!-- Bottom switcher of slider 2 -->
 				<ul class="hide-bullets">
-					<li class="col-xs-3"><a class="thumbnail" id="carousel-selector2-0"><img src="phones/slider_fantasy_31.jpg"></a></li>
-					<li class="col-xs-3"><a class="thumbnail" id="carousel-selector2-1"><img src="phones/slider_fantasy_21.jpg"></a></li>
-					<li class="col-xs-3"><a class="thumbnail" id="carousel-selector2-2"><img src="phones/slider_fantasy_5.jpg"></a></li>					
-					<li class="col-xs-3"><a class="thumbnail" id="carousel-selector2-3"><img src="phones/slider_fantasy_4.jpg"></a></li>
+					<li class="col-xs-3"><a class="thumbnail" id="carousel-selector2-0"><img src="/phones/slider_fantasy_31.jpg"></a></li>
+					<li class="col-xs-3"><a class="thumbnail" id="carousel-selector2-1"><img src="/phones/slider_fantasy_21.jpg"></a></li>
+					<li class="col-xs-3"><a class="thumbnail" id="carousel-selector2-2"><img src="/phones/slider_fantasy_5.jpg"></a></li>					
+					<li class="col-xs-3"><a class="thumbnail" id="carousel-selector2-3"><img src="/phones/slider_fantasy_4.jpg"></a></li>
 				</ul>
 				<!-- Bottom switcher of slider 2 END-->		
 
-				<img id="garanty-logo" src="phones/garanty_logo.png">
+				<img id="garanty-logo" src="/phones/garanty_logo.png">
 
 				<a class="btn9090 solomon-light" data-toggle="modal" data-target="#myModal89">Подробнее</a>	
 					<div id="myModal89" class="modal fade" role="dialog">
@@ -445,31 +444,31 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 		<div class="row">
 			<div class="col-sm-12 margin-bottom-setka">
 				<div class="col-sm-4">
-					<img class="img-responsive photo-center img-circle" src="phones/18051660_1951544335076318_1155667143_n.jpg">
+					<img class="img-responsive photo-center img-circle" src="/phones/18051660_1951544335076318_1155667143_n.jpg">
 					<p class="solomon-light text-center below-krug">Шаг 1</p>
 					<p class="text-above-photo">Вставьте в разъем <br>устройства ресивер</p>
 				</div>
 				<div class="col-sm-4">
-					<img class="img-responsive photo-center img-circle" src="phones/18051717_1951544315076320_245690050_n.jpg">
+					<img class="img-responsive photo-center img-circle" src="/phones/18051717_1951544315076320_245690050_n.jpg">
 					<p class="solomon-light text-center below-krug">Шаг 2</p>
 					<p class="text-above-photo">Спрячьте ресивер <br>под чехол</p>
 				</div>
 				<div class="col-sm-4">
-					<img class="img-responsive photo-center img-circle" src="phones/18035466_1951544321742986_915130487_n.jpg">
+					<img class="img-responsive photo-center img-circle" src="/phones/18035466_1951544321742986_915130487_n.jpg">
 					<p class="solomon-light text-center below-krug">Шаг 3</p>
 					<p class="text-above-photo">Положите телефон <br>на зарядку</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	
-	<div class="grey additional">
+  
+  <div class="grey additional">
 		<p id="setka2" class="jumbo setka2">Беспроводные повербанки</p>
 		<p id="text-below-zaryadka" class="text-center text-below-zaryadka">для зарядки просто положите смартфон на повербанк</p>
 		<div class="container">
 			<div class="row">		
 				<div class="col-sm-7">
-					<img id="powerbank-hand" class="img-responsive powerbank-hand" src="phones/powerbank_hand.png">
+					<img id="powerbank-hand" class="img-responsive powerbank-hand" src="/phones/powerbank_hand.png">
 				</div>
 				<div class="col-sm-5">
 					<p id="text-above-powerbank" class="solomon-light text-center big-margin product-title">Беспроводной повербанк <br><span class="text-below-powerbank">LUNA</span></p>
@@ -490,7 +489,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 							<div class="item active">
 								<div class="row">
 									<div class="col-sm-12 text-center">
-										<img id="powerbank1" src="phones/powerbank_1.png">
+										<img id="powerbank1" src="/phones/powerbank_1.png">
 									</div>
 								</div>
 							</div>
@@ -499,7 +498,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 							<div class="item">
 								<div class="row">
 									<div class="col-sm-12 text-center">
-										<img id="powerbank2" src="phones/powerbank_2.png">
+										<img id="powerbank2" src="/phones/powerbank_2.png">
 									</div>
 								</div>
 							</div>	
@@ -508,7 +507,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 							 <div class="item">
 								<div class="row">
 									<div class="col-sm-12 text-center">
-										<img id="powerbank3" src="phones/powerbank_3.png">
+										<img id="powerbank3" src="/phones/powerbank_3.png">
 									</div>
 								</div>
 							</div>
@@ -517,7 +516,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 							 <div class="item">
 								<div class="row">
 									<div class="col-sm-12 text-center">
-										<img id="powerbank4" src="phones/powerbank_4.png">
+										<img id="powerbank4" src="/phones/powerbank_4.png">
 									</div>
 								</div>
 							</div>
@@ -609,7 +608,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 			<div class="col-sm-6 slider-with-border">
 				<p class="text-center text-above-bonus">LUNA STANDART + БЕСПРОВОДНОЙ POWER BANK</p>
 				<div class="col-sm-6 img-wrap">
-					<img class="img-responsive" src="phones/standart_white_powerbank.jpg">
+					<img class="img-responsive" src="/phones/standart_white_powerbank.jpg">
 				</div>
 				<p class="solomon-light text-center p-above-button-standart">*Вы можете выбрать устройства любого цвета</p>
 				<button type="button" class="btn-buy discount together standart_black_powerbank" data-toggle="modal" data-target="#myModal86">Купить за 1199 грн</button>
@@ -643,7 +642,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 			<div class="col-sm-6">
 				<p class="text-center text-above-bonus">LUNA FANTASY + БЕСПРОВОДНОЙ POWER BANK</p>
 				<div class="img-wrap col-sm-6">
-					<img class="img-responsive" src="phones/fantasy_powerbank.jpg">
+					<img class="img-responsive" src="/phones/fantasy_powerbank.jpg">
 				</div>
 				<p class="solomon-light text-center p-above-button-standart">*Вы можете выбрать устройства любого цвета</p>
 				<button type="button" class="btn-buy discount together fantasy_gold_powerbank" data-toggle="modal" data-target="#myModal88">Купить за 1499 грн</button>
@@ -684,7 +683,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 		<div class="container">
 			<div class="row">		
 				<div class="col-sm-7">
-					<img class="img-responsive powerbank-hand" src="phones/autocharger1_big.png">
+					<img class="img-responsive powerbank-hand" src="/phones/autocharger1_big.png">
 				</div>
 				<div class="col-sm-5">
 					<p id="text-above-powerbank" class="solomon-light text-center big-margin product-title">Автомобильное зарядное устройство <br><span class="text-below-powerbank">LUNA</span></p>
@@ -705,7 +704,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 							<div class="item active">
 								<div class="row">
 									<div class="col-sm-12 text-center">
-										<img id="autocharger1" src="phones/autocharger2.png">
+										<img id="autocharger1" src="/phones/autocharger2.png">
 									</div>
 								</div>
 							</div>
@@ -714,7 +713,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 							<div class="item">
 								<div class="row">
 									<div class="col-sm-12 text-center">
-										<img id="autocharger2" src="phones/autocharger3.png">
+										<img id="autocharger2" src="/phones/autocharger3.png">
 									</div>
 								</div>
 							</div>	
@@ -723,7 +722,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 							 <div class="item">
 								<div class="row">
 									<div class="col-sm-12 text-center">
-										<img id="autocharger3" src="phones/autocharger4.png">
+										<img id="autocharger3" src="/phones/autocharger4.png">
 									</div>
 								</div>
 							</div>
@@ -732,7 +731,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 							 <div class="item">
 								<div class="row">
 									<div class="col-sm-12 text-center">
-										<img id="autocharger4" src="phones/autocharger5.png">
+										<img id="autocharger4" src="/phones/autocharger5.png">
 									</div>
 								</div>
 							</div>
@@ -812,7 +811,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 			<div class="col-sm-6 slider-with-border">
 				<p class="text-center text-above-bonus">LUNA STANDART + АВТОМОБИЛЬНАЯ ЗАРЯДКА</p>
 				<div class="col-sm-6 img-wrap">
-					<img class="img-responsive" src="phones/standart_white_autocharger.jpg">
+					<img class="img-responsive" src="/phones/standart_white_autocharger.jpg">
 				</div>
 				<p class="solomon-light text-center p-above-button-standart">*Вы можете выбрать устройства любого цвета</p>
 				<button type="button" class="btn-buy discount together standart_black_powerbank" data-toggle="modal" data-target="#myModal125">Купить за 1099 грн</button>
@@ -846,7 +845,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 			<div class="col-sm-6">
 				<p class="text-center text-above-bonus">LUNA FANTASY + АВТОМОБИЛЬНАЯ ЗАРЯДКА</p>
 				<div class="img-wrap col-sm-6">
-					<img class="img-responsive" src="phones/fantasy_autocharger.jpg">
+					<img class="img-responsive" src="/phones/fantasy_autocharger.jpg">
 				</div>
 				<p class="solomon-light text-center p-above-button-standart">*Вы можете выбрать устройства любого цвета</p>
 				<button type="button" class="btn-buy discount together fantasy_gold_powerbank" data-toggle="modal" data-target="#myModal97">Купить за 1299 грн</button>
@@ -889,7 +888,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 			</div>
 			<div class="col-sm-6 slider-with-border">
 				<p class="text-center text-above-bonus">LUNA STANDART + беспроводной power bank + автомобильная зарядка</p>
-				<img class="img-responsive" src="phones/standart_white_powerbank_autocharger.jpg">
+				<img class="img-responsive" src="/phones/standart_white_powerbank_autocharger.jpg">
 				<p class="solomon-light text-center p-above-button-standart">*Вы можете выбрать устройства любого цвета</p>
 				<button type="button" class="btn-buy discount exclusive" data-toggle="modal" data-target="#myModal85">Купить за 1850 грн</button>
 					<div id="myModal85" class="modal fade" role="dialog" style="font-family: 'Open Sans', sans-serif">
@@ -920,7 +919,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 			</div>
 			<div class="col-sm-6">
 				<p class="text-center text-above-bonus">LUNA FANTASY + беспроводной power bank + автомобильная зарядка</p>
-				<img class="img-responsive" src="phones/fantasy_powerbank_autocharger.jpg">
+				<img class="img-responsive" src="/phones/fantasy_powerbank_autocharger.jpg">
 				<p class="solomon-light text-center p-above-button-standart">*Вы можете выбрать устройства любого цвета</p>
 				<button type="button" class="btn-buy discount exclusive" data-toggle="modal" data-target="#myModal87">Купить за 2000 грн</button>
 					<div id="myModal87" class="modal fade" role="dialog" style="font-family: 'Open Sans', sans-serif">
@@ -964,7 +963,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 				<div class="col-sm-12">
 					<div class="col-sm-6 setka-with-margin">
 						<div class="col-sm-4 text-center">
-							<img class="img-responsive type-logo" src="phones/apple-type.png">
+							<img class="img-responsive type-logo" src="/phones/apple-type.png">
 						</div>
 						<div class="col-sm-8 text-center four-types-text-colomn">
 							<span class="four-type-item">Lightning</span>
@@ -974,7 +973,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 									<div class="modal-dialog">
 										<div class="modal-content">
 											<div class="modal-body">
-												<img src="phones/type-c-more.jpg" width="100%" alt="charger">
+												<img src="/phones/type-c-more.jpg" width="100%" alt="charger">
 											</div>
 											<div class="modal-footer">
 												<button type="button" class="btn btn-default btn-success" data-dismiss="modal">Закрыть</button>
@@ -986,7 +985,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 					</div>
 					<div class="col-sm-6 setka-with-margin">		
 						<div class="col-sm-4 text-center">
-							<img class="img-responsive type-logo" src="phones/android-type.png">
+							<img class="img-responsive type-logo" src="/phones/android-type.png">
 						</div>
 						<div class="col-sm-8 text-center four-types-text-colomn">
 							<span class="four-type-item">Micro USB Type A</span>
@@ -996,7 +995,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 									<div class="modal-dialog">
 										<div class="modal-content">
 											<div class="modal-body">									
-												<img src="phones/type-a-more.jpg" width="100%" alt="charger">
+												<img src="/phones/type-a-more.jpg" width="100%" alt="charger">
 											</div>
 											<div class="modal-footer">
 												<button type="button" class="btn btn-default btn-success" data-dismiss="modal">Закрыть</button>
@@ -1011,7 +1010,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 				<div class="col-sm-12">
 					<div class="col-sm-6 setka-with-margin">
 						<div class="col-sm-4 text-center">
-							<img class="img-responsive type-logo" src="phones/android-type.png">
+							<img class="img-responsive type-logo" src="/phones/android-type.png">
 						</div>
 						<div class="col-sm-8 text-center four-types-text-colomn">
 							<span class="four-type-item">Micro USB Type B</span>
@@ -1021,7 +1020,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 									<div class="modal-dialog">
 										<div class="modal-content">
 											<div class="modal-body">
-												<img src="phones/type-b-more.jpg" width="100%" alt="charger">
+												<img src="/phones/type-b-more.jpg" width="100%" alt="charger">
 											</div>
 											<div class="modal-footer">
 												<button type="button" class="btn btn-default btn-success" data-dismiss="modal">Закрыть</button>
@@ -1033,7 +1032,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 					</div>
 					<div class="col-sm-6 setka-with-margin">
 						<div class="col-sm-4 text-center">
-							<img class="img-responsive type-logo" src="phones/android-type.png">
+							<img class="img-responsive type-logo" src="/phones/android-type.png">
 						</div>
 						<div class="col-sm-8 text-center four-types-text-colomn">
 							<span class="four-type-item">Micro USB Type C</span>
@@ -1056,14 +1055,14 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 			<div class="col-sm-12 margin-2phones-2receivers">
 				<div class="col-xs-12 col-sm-6 col-md-5 padding-2phones-2receivers">
 					<div class="col-xs-2 col-sm-2 col-md-1">
-						<img src="phones/network.png">
+						<img src="/phones/network.png">
 					</div>
 					<div class="col-xs-10 col-sm-10 col-md-11">
 						<p class="solomon-light p-2phones-2receivers">Наш подарок <span style="font-family: 'Solomon Sans SemiBold'">экономит</span> Вам минимум <span style="font-family: 'Solomon Sans SemiBold'">150 грн</span> на покупку ещё одного ресивера для другого Вашего гаджета или гаджета Ваших близких</p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-7">
-					<img class="img-responsive" src="phones/2phones_2receivers.png">
+					<img class="img-responsive" src="/phones/2phones_2receivers.png">
 				</div>
 			</div>
 			<div class="col-sm-12">
@@ -1084,7 +1083,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 						<p class="solomon-light p-below-garanty-text">Гарантия на товар <br><span style="font-family: 'Solomon Sans Normal'">12 МЕСЯЦЕВ</span</p>
 					</div>
 					<div class="col-sm-4">
-						<img id="garanty-img" class="img-responsive" src="phones/garanty.png">
+						<img id="garanty-img" class="img-responsive" src="/phones/garanty.png">
 					</div>
 					<div class="col-sm-4 garanty-text-side">
 						<span class="garanty-text">Безопасная покупка</span>
@@ -1100,7 +1099,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 			<div id="section5"></div>
 			<div class="col-sm-12">
 				<p id="zakaz" class="jumbo">Как заказать беcпроводную зарядку?</p>
-				<img id="zakaz" class="img-responsive" src="phones/zakaz.jpg">
+				<img id="zakaz" class="img-responsive" src="/phones/zakaz.jpg">
 			</div>
 		</div>
 	</div>
@@ -1113,14 +1112,14 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 				</div>
 				<div class="col-sm-12">
 					<div class="col-sm-6 padding-150 slider-with-border-black">
-						<span class="dostavka_name">ПО КИЕВУ</span> <img src="phones/kyiv_herb.png">
+						<span class="dostavka_name">ПО КИЕВУ</span> <img src="/phones/kyiv_herb.png">
 						<p class="p-below-dostavka-name solomon-light">Курьером <br>по Киеву</p>
 						<p class="solomon-light">Доставка производится в пределах Киева;</p>
 						<p class="solomon-light">Оплата курьеру при получении заказа;</p>
 						<p class="solomon-light">Стоимость доставки - от 30 грн.</p>
 					</div>
 					<div class="col-sm-6 padding-150">
-						<span class="dostavka_name">ПО УКРАИНЕ</span> <img id="nova-poshta" src="phones/nova_poshta.png">
+						<span class="dostavka_name">ПО УКРАИНЕ</span> <img id="nova-poshta" src="/phones/nova_poshta.png">
 						<p class="p-below-dostavka-name solomon-light">Доставка Новой почтой <br>по всей Украине</p>
 						<p class="solomon-light">Оплата заказа при получении;</p>
 						<p class="solomon-light">Стоимость доставки до 50 грн + 2% комиссии за период;</p>
@@ -1149,7 +1148,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 							<blockquote>
 								<div class="row">
 									<div class="col-sm-3 text-center">
-										<img class="img-circle" src="phones/avatar_1.jpg" style="width: 100px; height: 100px">
+										<img class="img-circle" src="/phones/avatar_1.jpg" style="width: 100px; height: 100px">
 									</div>
 									<div class="col-sm-9 otzyv">
 										<p>Заказал одну. По поводу самой зарядки - полностью доволен. Заряжает хорошо и довольно быстро. Работает через бампер на телефоне без проблем.</p>
@@ -1162,7 +1161,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 							<blockquote>
 								<div class="row">
 									<div class="col-sm-3 text-center">
-										<img class="img-circle" src="phones/avatar_2.jpg" style="width: 100px; height: 100px">
+										<img class="img-circle" src="/phones/avatar_2.jpg" style="width: 100px; height: 100px">
 									</div>
 									<div class="col-sm-9 otzyv">
 										<p>Очень современная зарядка, вот бы на все телефоны такую... Качество очень радует.</p>
@@ -1176,7 +1175,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 							<blockquote>
 								<div class="row">
 									<div class="col-sm-3 text-center">
-										<img class="img-circle" src="phones/avatar_3.jpg" style="width: 100px; height: 100px">
+										<img class="img-circle" src="/phones/avatar_3.jpg" style="width: 100px; height: 100px">
 									</div>
 									<div class="col-sm-9 otzyv">
 										<p>Пользуюсь неделю, изменил свою точку зрения. Очень удобная вещь! Использование рессивера не так критично, как это показалось в первый день.</p>
@@ -1189,7 +1188,7 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 							<blockquote>
 								<div class="row">
 									<div class="col-sm-3 text-center">
-										<img class="img-circle" src="phones/avatar_4.jpg" style="width: 100px; height: 100px">
+										<img class="img-circle" src="/phones/avatar_4.jpg" style="width: 100px; height: 100px">
 									</div>
 									<div class="col-sm-9 otzyv">
 										<p>Понравилось, так как очень удобно, не нужно все время провод вставлять. И заряд быстро берет.</p>
@@ -1386,18 +1385,18 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 		</div>
     </div>
 
-	<div id="scrollup"><img alt="Прокрутить вверх" src="phones/scroll_up.png" width="60%"></div>
+	<div id="scrollup"><img alt="Прокрутить вверх" src="/phones/scroll_up.png" width="60%"></div>
 
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link rel='stylesheet' type='text/css' href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script async src="bootstrap/js/bootstrap.min.js"></script>	
-	<script async type="text/javascript" src="js/script.min.js?v1"></script>	
-	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
-	<script async type="text/javascript" src="js/carousel.min.js?v1"></script>
+	<script async src="/bootstrap/js/bootstrap.min.js"></script>	
+	<script async type="text/javascript" src="/js/script.min.js?v1"></script>	
+	<script type="text/javascript" src="/js/jquery.maskedinput.min.js"></script>
+	<script async type="text/javascript" src="/js/carousel.min.js?v1"></script>
 	<!-- <script async type="text/javascript" src="js/ouibounce.js"></script> -->
 	<!-- <script async type="text/javascript" src="/send/script.js"></script> -->
 

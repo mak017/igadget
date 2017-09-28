@@ -484,7 +484,7 @@ p.dark-grey {
 }
 
 .four-types {
-    /* margin-top: 50px; */
+    margin-top: 50px;
 }
 
 .four-type-item {
@@ -1256,6 +1256,7 @@ button.accordion.active:after {
 .page-survey .question {
     margin-bottom: 35px;
     padding-left: 15px;
+    padding-right: 15px;
     font-size: 36px;
     line-height: 1.2;
 }
@@ -1269,6 +1270,12 @@ button.accordion.active:after {
     padding: 4px;
 }
 
+.page-survey .slide4 .progress {
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 .page-survey .progress-bar {
     border-radius: 30px;
 }
@@ -1277,6 +1284,15 @@ button.accordion.active:after {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.page-survey .slide4 .options,
+.page-survey .slide4 .img-wrap {
+    float: right;
+}
+
+.page-survey .slide4 .options {
+    padding: 0 50px;
 }
 
 .page-survey .option {
@@ -1299,6 +1315,17 @@ button.accordion.active:after {
     width: 225px;
 }
 
+.page-survey .slide4 .option {
+    flex-direction: row;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 25px;
+}
+
+.page-survey .slide4 .option p {
+    margin: 0;
+}
+
 .page-survey .option.selected {
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, .2);
 }
@@ -1314,6 +1341,10 @@ button.accordion.active:after {
     margin: auto auto 0;
     border: 2px solid #278c38;
     border-radius: 50%;
+}
+
+.page-survey .slide4 .radio-btn {
+    margin: 0 0 0 auto;
 }
 
 .page-survey .option.selected .radio-btn::before {
@@ -1333,10 +1364,19 @@ button.accordion.active:after {
     margin-top: 20px;
 }
 
-.page-survey .survey .img-wrap {
+.page-survey .slide4 .buttons-wrap {
+    padding-top: 20px;
+    clear: both;
+}
+
+.page-survey .slide1 .img-wrap {
     position: relative;
     left: -3%;
     width: 50%;
+}
+
+.page-survey .slide4 .img-wrap img {
+    margin: auto;
 }
 
 .page-survey .survey .buttons {
@@ -1344,7 +1384,8 @@ button.accordion.active:after {
 }
 
 .page-survey .survey .slide2 .buttons,
-.page-survey .survey .slide3 .buttons {
+.page-survey .survey .slide3 .buttons,
+.page-survey .survey .slide4 .buttons {
     margin-left: auto;
 }
 
@@ -1366,6 +1407,165 @@ button.accordion.active:after {
 
 .page-survey .btn-back:focus {
     outline: 0;
+}
+
+.page-survey .slide5 {
+    width: 100%;
+}
+
+.page-survey .slide5 .options {
+    justify-content: space-between;
+    margin-left: -45px;
+    margin-right: -45px;
+}
+
+.page-survey .slide5 .option {
+    margin: 0 0 15px;
+    cursor: auto;
+}
+
+.page-survey .slide5 .result {
+    width: 67%;
+}
+
+.page-survey .slide5 .products {
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.page-survey .slide5 .images {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.page-survey .slide5 .item {
+    width: 105px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.page-survey .slide5 .item span {
+    display: block;
+    margin-top: 15px;
+    color: inherit;
+    font-family: 'Solomon Sans SemiBold';
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.page-survey .slide5 .cost {
+    font-size: 24px;
+}
+
+.page-survey .slide5 .regular-cost {
+    text-decoration: line-through;
+}
+
+.page-survey .slide5 .discount-cost {
+    color: #2ca943;
+    font-family: 'Solomon Sans SemiBold';
+    font-size: 48px;
+}
+
+.page-survey .slide5 .features {
+    width: 21%;
+}
+
+.page-survey .slide5 .features .option {
+    flex-direction: row;
+    padding: 10px 15px;
+}
+
+.page-survey .slide5 .features p {
+    margin: 0;
+    line-height: 1.2;
+}  
+
+.page-survey .slide5 .fa {
+    margin-right: 25px;
+    font-size: 30px;
+}
+
+.page-survey .slide5 .form-wrap,
+.page-survey .slide5 .timer-wrap {
+    width: 77%;
+    min-width: 550px;
+    margin: auto;
+}
+
+.page-survey .slide5 form {
+    text-align: center;
+}
+
+.page-survey .slide5 input,
+.page-survey .slide5 button {
+    width: 49%;
+}
+
+.page-survey .slide5 input {
+    padding: 16px 30px;
+    font-size: 24px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #b9cebe;
+    border-radius: 50px;;
+    margin: 10px 10px 10px auto;
+}
+
+.page-survey .slide5 input:focus {
+    outline: 0;
+}
+
+.page-survey .slide5 .form-wrap span {
+    display: block;
+    padding-left: 10px;
+    color: #2ca943;
+    font-size: 12px;
+}
+
+.page-survey .slide5 .timer-wrap {
+    display: flex;
+    margin-top: 40px;
+}
+
+.page-survey .slide5 .timer {
+    position: relative;
+    min-width: 290px;
+    border: 0;
+    background-color: transparent;
+    font-size: 100px;
+}
+
+.page-survey .slide5 .timer-text p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.page-survey .slide5 .timer-text span {
+    color: #2ca943;
+    font-family: 'Solomon Sans SemiBold';
+    font-size: 24px;
+}
+
+.timer .countdown-amount {
+    font-size: 100px;
+    line-height: .8;
+}
+
+.timer .countdown-section {
+    font-size: 16px;
+}
+
+.timer .countdown-period {
+    font-family: 'Solomon Sans Normal' !important;
+}
+
+.timer .countdown-descr {
+    position: absolute;
+    top: -24%;
+    left: -2%;
 }
 
 div.acc {
@@ -1713,12 +1913,40 @@ p#otzyvu {
     .q2 .survey .container {
         padding-bottom: 50px;
     }
+    .page-survey .slide4 .options {
+        padding: 0 15px;
+    }
     .page-survey .survey .img-wrap {
         left: -1%;
     }
     .page-survey .btn-back,
     .page-survey .survey .btn-buy {
         padding: 10px 40px;
+    }
+    .page-survey .slide5 .options {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .page-survey .slide5 .result {
+        width: 100%;
+    }
+    .page-survey .slide5 .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 102%;
+        margin: 0 -7px;
+    }
+    .page-survey .slide5 .features .option {
+        flex: 1 0 200px;
+        margin: 0 7px 15px;
+    }
+    .page-survey .slide5 input {
+        padding: 10px 13px;
+        font-size: 20px;
+    }
+    .page-survey .slide5 .form-wrap {
+        text-align: center;
     }
 }
 
@@ -2204,15 +2432,25 @@ p#otzyvu {
     .page-survey .question {
         font-size: 23px;
     }
+    .page-survey .slide4 .options,
+    .page-survey .slide4 .img-wrap {
+        float: none;
+    }
+    .page-survey .slide4 .options {
+        justify-content: space-around;
+    }
     .page-survey .slide1 .option,
     .page-survey .slide3 .option {
         width: 100%;
         max-width: 320px;
     }
+    .page-survey .slide4 .option {
+        width: 135px;
+    }
     .page-survey .survey .buttons-wrap {
         flex-wrap: wrap;
     }
-    .page-survey .survey .img-wrap {
+    .page-survey .slide1 .img-wrap {
         order: 2;
         left: 0;
         width: 100%;
@@ -2224,6 +2462,30 @@ p#otzyvu {
     .page-survey .btn-back {
         font-size: 18px;
         margin: 10px auto 10px auto;
+    }
+    .page-survey .slide5 .products {
+        flex-direction: column;
+    }
+    .page-survey .slide5 .images {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .page-survey .slide5 .cost {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .page-survey .slide5 .form-wrap,
+    .page-survey .slide5 .timer-wrap {
+        width: 100%;
+        min-width: auto;
+    }
+    .page-survey .slide5 input,
+    .page-survey .slide5 button {
+        width: 100%;
+    }
+    .page-survey .slide5 .timer-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -2249,7 +2511,16 @@ p#otzyvu {
     .phone-main-banner {
         margin-left: -15px;
         width: 115%;
-        /* margin-top: 125px; */
+        margin-top: 125px;
+    }
+    .red-theme .phone-main-banner {
+        margin-top: 135px;
+    }
+    .red-theme .main-logo-margin .item p {
+        margin-top: -20px;
+    }
+    .red-theme .main-logo-margin .item.main p {
+        margin-top: 0
     }
     p.jumbo-main-logo {
         font-size: 27px;
@@ -2419,7 +2690,7 @@ p#otzyvu {
     .phone-main-banner {
         margin-left: -15px;
         width: 115%;
-        /* margin-top: 150px; */
+        margin-top: 150px;
     }
     p.jumbo-main-logo {
         font-size: 35px;
