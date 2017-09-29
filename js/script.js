@@ -329,6 +329,9 @@ $(document).ready(function () {
         $(this).tooltip("hide");
 
         // processResult();
+        $('body, html').stop().animate({
+          scrollTop: 0
+        }, 100);
 
         if (i !== $slides.length - 2) {
           $body.addClass('q' + (i + 2));
