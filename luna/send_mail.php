@@ -95,7 +95,7 @@ if( !empty($_POST['phone'])) {
 
     include_once "var/igadget.me/www/php_proxy_robocrm.php";
     
-    header('Location: http://igadget.me/luna/thankyou/index.html');
+    header('Location: http://igadget.me/thankyou/index.html');
 	exit;
         
 } else {
