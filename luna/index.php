@@ -120,63 +120,75 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 	<!-- NAVBAR END-->
 
 	<div class="container grey main-logo-margin">
-		<div class="row">
-			<div class="item main col-sm-4">
-				<img class="phone-main-banner" src="/phones/main_picture.png">
-				<p>Диск <span>быстрой</span> беспроводной <span>зарядки</span></p>
+	<div class="row">
+		<div class="item main col-sm-4">
+			<img class="phone-main-banner" src="/phones/main_picture.png">
+			<p>Диск <span>быстрой</span> беспроводной <span>зарядки</span></p>
+			<div class="price">
+				<div class="regular-price">870 грн.</div>
+				<div class="discount-price">699 грн.</div>
 			</div>
-			<div class="col-sm-8 slogan">
-				<p class="jumbo-main-logo text-center">Заряжайте Ваш смартфон без проводов!</p>
+		</div>
+		<div class="col-sm-8 slogan">
+			<p class="jumbo-main-logo text-center">Заряжайте Ваш смартфон без проводов!</p>
+		</div>
+		<div class="col-sm-8 work-with">
+			<p class="text-center solomon-light">работает с:</p>
+			<div class="text-center">
+				<img class="phone-logo-margin" src="/phones/apple.png">
+				<img class="phone-logo-margin" src="/phones/android.png">
+				<img class="phone-logo-margin" src="/phones/windows.png">
 			</div>
-			<div class="col-sm-8 work-with">
-				<p class="text-center solomon-light">работает с:</p>
-				<div class="text-center">
-					<img class="phone-logo-margin" src="/phones/apple.png">
-					<img class="phone-logo-margin" src="/phones/android.png">
-					<img class="phone-logo-margin" src="/phones/windows.png">
-				</div>
+		</div>
+		<div class="item power col-sm-4">
+			<img class="img-responsive" src="/phones/powerbank_3.png">
+			<p>Беспроводной <span>повербанк</span></p>
+			<div class="price">
+				<div class="regular-price"></div>
+				<div class="discount-price">999 грн.</div>
 			</div>
-			<div class="item power col-sm-4">
-				<img class="img-responsive" src="/phones/powerbank_3.png">
-				<p>Беспроводной <span>повербанк</span></p>
+		</div>
+		<div class="item auto col-sm-4 border-mobile">
+			<img class="img-responsive" src="/phones/autocharger3.png">
+			<p><span>Автомобильная</span> беспроводная <span>зарядка</span></p>
+			<div class="price">
+				<div class="regular-price"></div>
+				<div class="discount-price">799 грн.</div>
 			</div>
-			<div class="item auto col-sm-4 border-mobile">
-				<img class="img-responsive" src="/phones/autocharger3.png">
-				<p><span>Автомобильная</span> беспроводная <span>зарядка</span></p>
-			</div>
-			<div class="col-sm-4 col-sm-offset-4 text-center btn-wrap">
-				<button type="button" class="btn-buy btn-buy-universal" data-toggle="modal" data-target="#myModal15">Быстрый заказ</button>
-			</div>
-			<div id="myModal15" class="modal fade" role="dialog">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<p class="modal-title text-center" style="font-size: 25px">Сделать заказ</p>
-							<p class="solomon-light" style="margin-top: 12px; margin-bottom: -2px; font-size: 15px; text-align: center">Мы свяжемся с Вами в течении часа</p>
-						</div>
-						<div class="modal-body">
-							<form method="POST" action="send_mail.php">
-								<input type="hidden" name="head" value="LUNA MAIN BANNER">
-								<div class="form-group" style="margin-top: 15px">
-									<input style="background: #f8f8f8;" type="text" name="name" placeholder="Имя..." class="form-control input-lg" id="form-username4" required="required">
-								</div>
-								<div class="form-group" style="margin-bottom: 15px">
-									<input style="background: #f8f8f8;" type="phone" name="phone" placeholder="Номер телефона..." class="form-control input-lg" id="form-phone4" required="required">
-								</div>							
-								<button type="submit" id="send4" class="btn777">КУПИТЬ СО СКИДКОЙ</button>
-								<div class="messages4" style="font-size: 0;"></div>
-							</form>
-						</div>
+		</div>
+		<div class="col-sm-4 col-sm-offset-4 text-center btn-wrap">
+			<button type="button" class="btn-buy btn-buy-universal" data-toggle="modal" data-target="#myModal15">Быстрый заказ</button>
+		</div>
+		<div id="myModal15" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<p class="modal-title text-center" style="font-size: 25px">Сделать заказ</p>
+						<p class="solomon-light" style="margin-top: 12px; margin-bottom: -2px; font-size: 15px; text-align: center">Мы свяжемся с Вами в течении часа</p>
+					</div>
+					<div class="modal-body">
+						<form method="POST" action="send_mail.php">
+							<input type="hidden" name="head" value="LUNA MAIN BANNER">
+							<div class="form-group" style="margin-top: 15px">
+								<input style="background: #f8f8f8;" type="text" name="name" placeholder="Имя..." class="form-control input-lg" id="form-username4" required="required">
+							</div>
+							<div class="form-group" style="margin-bottom: 15px">
+								<input style="background: #f8f8f8;" type="phone" name="phone" placeholder="Номер телефона..." class="form-control input-lg" id="form-phone4" required="required">
+							</div>							
+							<button type="submit" id="send4" class="btn777">КУПИТЬ СО СКИДКОЙ</button>
+							<div class="messages4" style="font-size: 0;"></div>
+						</form>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-sm-4 text-center visa-margin-bottom">
-				<span class="text-center">бесплатная доставка при оплате</span> <img class="visa-mastercard" src="/phones/visa-mastercard1.png">
-				<p class="solomon-light text-center below-button">доставка по Киеву и Украине</p>
-			</div>
+		</div>
+		<div class="col-lg-3 col-sm-4 text-center visa-margin-bottom">
+			<span class="text-center">бесплатная доставка при оплате</span> <img class="visa-mastercard" src="/phones/visa-mastercard1.png">
+			<p class="solomon-light text-center below-button">доставка по Киеву и Украине</p>
 		</div>
 	</div>
+</div>
 
 	<div class="mouse">
 		<div class="mouse-button"></div>
