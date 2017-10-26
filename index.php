@@ -1,4 +1,5 @@
 <?php 
+//*********************** ������� �������� *************************
 session_start();
 if(!isset($_SESSION['utms'])) {
     $_SESSION['utms'] = array();
@@ -13,9 +14,6 @@ $_SESSION['utms']['utm_medium'] = $_GET['utm_medium'];
 $_SESSION['utms']['utm_term'] = $_GET['utm_term'];
 $_SESSION['utms']['utm_content'] = $_GET['utm_content'];
 $_SESSION['utms']['utm_campaign'] = $_GET['utm_campaign'];
-session_id();
-include ('config.php');
-$price_old=floor(($price_new/(100-$skidka))*100);
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -105,7 +103,102 @@ $price_old=floor(($price_new/(100-$skidka))*100);
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWTD3HZ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+	<!-- End Google Tag Manager (noscript) -->
+	
+	<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1195543740514431');
+		fbq('track', 'PageView');
+		fbq('track', 'Lead');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=1195543740514431&ev=PageView&noscript=1"
+		/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '473117753069915');
+  fbq('track', 'PageView');
+  fbq('track', 'Lead');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=473117753069915&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '534326753582146');
+  fbq('track', 'PageView');
+  fbq('track', 'Lead');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=534326753582146&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '906247872866691');
+  fbq('track', 'PageView');
+  fbq('track', 'Lead');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=906247872866691&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '403255396756614');
+  fbq('track', 'PageView');
+  fbq('track', 'Lead');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=403255396756614&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 
 	<!-- NAVBAR -->
 	
@@ -342,6 +435,8 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 								<div class="modal-body">
 									<form method="POST" action="send_mail.php">
 										<input type="hidden" name="head" value="LUNA STANDART">
+										<input type="hidden" name="product_id" value="5">
+										<input type="hidden" name="price" value="499">
 										<div class="form-group" style="margin-top: 15px">
 											<input style="background: #f8f8f8;" type="text" name="name" placeholder="Имя..." class="form-control input-lg" id="form-username4" required="required">
 											<!-- <input type="hidden" id="form-product2" value="LUNA STANDART"> -->
@@ -434,6 +529,9 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 								<div class="modal-body">
 								    <form method="POST" action="send_mail.php">
                                         <input type="hidden" name="head" value="LUNA FANTASY">
+
+                                        <input type="hidden" name="product_id" value="4">
+										<input type="hidden" name="price" value="699">
                                         <div class="form-group" style="margin-top: 15px">
                                             <input style="background: #f8f8f8;" type="text" name="name" placeholder="Имя..." class="form-control input-lg" id="form-username" required="required">
                                         </div>
@@ -609,6 +707,13 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 									<div class="modal-body">
 										<form method="POST" action="send_mail.php">
 											<input type="hidden" name="head" value="3 POWERBANKS">
+
+
+
+											<input type="hidden" name="product_id" value="1">
+										<input type="hidden" name="price" value="999">
+
+
 											<div class="form-group" style="margin-top: 15px">
 												<input style="background: #f8f8f8;" type="text" name="name" placeholder="Имя..." class="form-control input-lg" id="form-username12" required="required">
 		<!--                                        <input type="hidden" id="form-product4" value="3 POWERBANKS">-->
@@ -651,6 +756,13 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 									<div class="modal-body">
 										<form method="POST" action="send_mail.php">
 											<input type="hidden" name="head" value="LUNA STANDART and POWERBANK">
+
+
+
+										<input type="hidden" name="product_id" value="7">
+										<input type="hidden" name="price" value="1199">
+
+
 											<div class="form-group" style="margin-top: 15px">
 												<input style="background: #f8f8f8;" type="text" name="name" placeholder="Имя..." class="form-control input-lg" id="form-username13" required="required">
 	
@@ -685,6 +797,15 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 								<div class="modal-body">
 									<form method="POST" action="send_mail.php">
 										<input type="hidden" name="head" value="LUNA FANTASY and POWERBANK">
+
+	<input type="hidden" name="product_id" value="8">
+										<input type="hidden" name="price" value="1499">
+
+
+
+
+
+
 										<div class="form-group" style="margin-top: 15px">
 											<input style="background: #f8f8f8;" type="text" name="name" placeholder="Имя..." class="form-control input-lg" id="form-username14" required="required">
 											<!-- <input type="hidden" id="form-product6" value="LUNA FANTASY and POWERBANK"> -->
@@ -813,6 +934,12 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 									<div class="modal-body">
 										<form method="POST" action="send_mail.php">
 											<input type="hidden" name="head" value="3 AUTOCHARGERS">
+
+
+											<input type="hidden" name="product_id" value="6">
+										<input type="hidden" name="price" value="799">
+
+
 											<div class="form-group" style="margin-top: 15px">
 												<input style="background: #f8f8f8;" type="text" name="name" placeholder="Имя..." class="form-control input-lg" id="form-username14" required="required">
 											</div>
@@ -854,6 +981,15 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 									<div class="modal-body">
 										<form method="POST" action="send_mail.php">
 											<input type="hidden" name="head" value="LUNA STANDART and AUTOCHARGER">
+
+
+
+	<input type="hidden" name="product_id" value="9">
+										<input type="hidden" name="price" value="1099">
+
+
+
+
 											<div class="form-group" style="margin-top: 15px">
 												<input style="background: #f8f8f8;" type="text" name="name" placeholder="Имя..." class="form-control input-lg" id="form-username15" required="required">
 	
@@ -888,6 +1024,12 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 								<div class="modal-body">
 									<form method="POST" action="send_mail.php">
 										<input type="hidden" name="head" value="LUNA FANTASY and AUTOCHARGER">
+
+
+	<input type="hidden" name="product_id" value="10">
+										<input type="hidden" name="price" value="1299">
+
+
 										<div class="form-group" style="margin-top: 15px">
 											<input style="background: #f8f8f8;" type="text" name="name" placeholder="Имя..." class="form-control input-lg" id="form-username16" required="required">
 										</div>
@@ -930,6 +1072,12 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 									<div class="modal-body">
 										<form method="POST" action="send_mail.php">
 											<input type="hidden" name="head" value="LUNA STANDART, POWERBANK and AUTOCHARGER">
+
+
+	<input type="hidden" name="product_id" value="11">
+										<input type="hidden" name="price" value="1850">
+
+
 											<div class="form-group" style="margin-top: 15px">
 												<input style="background: #f8f8f8;" type="text" name="name" placeholder="Имя..." class="form-control input-lg" id="form-username17" required="required">
 											</div>
@@ -961,6 +1109,11 @@ $price_old=floor(($price_new/(100-$skidka))*100);
 								<div class="modal-body">
 									<form method="POST" action="send_mail.php">
 										<input type="hidden" name="head" value="LUNA FANTASY, POWERBANK and AUTOCHARGER">
+
+	<input type="hidden" name="product_id" value="12">
+										<input type="hidden" name="price" value="2000">
+
+
 										<div class="form-group" style="margin-top: 15px">
 											<input style="background: #f8f8f8;" type="text" name="name" placeholder="Имя..." class="form-control input-lg" id="form-username18" required="required">
 											<!-- <input type="hidden" id="form-product6" value="LUNA FANTASY and POWERBANK"> -->

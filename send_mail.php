@@ -1,5 +1,4 @@
 <?php
-
 function send_mail($subject, $message, $email = 'Korn.vlad80@gmail.com')
 {
     $to      = $email;
@@ -93,12 +92,13 @@ if( !empty($telephone)) {
     $_POST['fid'] = '1-8ce094e37af887b1e5bf';
     include_once "php_proxy_robocrm.php";
     
-    header('Location: http://igadget.me/thankyou/index.html');
+    header('Location: http://igadget.me/thankyou/index.php?name='.$name.'&phone='.$telephone.'&product_name='.$head.'&product_id='.$_POST['product_id'].'&product_price='.$_POST['price']);
 	exit;
         
 } else {
 	header('Location: http://igadget.me/');
 	exit;
 }
+
 
 ?>
