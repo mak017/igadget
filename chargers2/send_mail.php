@@ -14,7 +14,7 @@ $utm_content = $_SESSION['utms']['utm_content'];
 $utm_campaign = $_SESSION['utms']['utm_campaign'];
 
 
-$to = "Korn.vlad80@gmail.com";//
+$to = "m.filichkin.av@gmail.com";//
 
 $header = "Content-type: text/plain; charset=UTF-8\r\n";
 $header .= "From: $to\r\n";

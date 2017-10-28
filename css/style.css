@@ -2292,8 +2292,8 @@ p#otzyvu {
     }
     .main-logo-margin .work-with {
         position: absolute;
-        right: 0;
-        top: 40vw;
+        right: -15px;
+        top: 41vw;
         -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
         order: 1;
