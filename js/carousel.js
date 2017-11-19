@@ -1,4 +1,4 @@
-jQuery(document).ready(function ($) {
+$(document).ready(function ($) {
 	$('#myCarousel233').carousel({
 		interval: 3000
 	});
@@ -15,8 +15,12 @@ jQuery(document).ready(function ($) {
 		var id_selector = $(this).attr("id");
 		try {
 			var id = /-(\d+)$/.exec(id_selector)[1];
-			console.log(id_selector, id);
-			jQuery('#myCarousel233').carousel(parseInt(id));
+			if ($('#myCarousel233').length > 0) {
+				$('#myCarousel233').carousel(parseInt(id));
+			} else {
+				var carouselId = $(this).closest('.hide-bullets').attr('data-carousel-id');
+				$('#' + carouselId).carousel(parseInt(id));
+			}
 		} catch (e) {
 			console.log('Regex failed!', e);
 		}
@@ -26,7 +30,7 @@ jQuery(document).ready(function ($) {
 		try {
 			var id = /-(\d+)$/.exec(id_selector)[1];
 			console.log(id_selector, id);
-			jQuery('#myCarousel299').carousel(parseInt(id));
+			$('#myCarousel299').carousel(parseInt(id));
 		} catch (e) {
 			console.log('Regex failed!', e);
 		}

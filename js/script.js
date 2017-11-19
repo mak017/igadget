@@ -124,7 +124,6 @@ $(document).ready(function () {
 
   $('.option').on('click', function (e) {
     $this = $(this);
-    // console.log($this.closest('.slide5').length);
     if ($this.closest('.slide5').length === 0 && !$this.hasClass('selected')) {
       $this.parent().find($('.option')).removeClass('selected');
       $this.addClass('selected')
@@ -171,148 +170,6 @@ $(document).ready(function () {
     });
   }
 
-  // function analyzeData(i, charge, auto, pb) {
-  //   var $option = $(this).attr('data-option');
-  //   charge = null;
-  //   pb = null;
-  //   auto = null;
-  //   i++;
-
-  //   if (i === 0) {
-  //     if ($option === 'often') {
-  //       charge = 'fantasy';
-  //     } else {
-  //       charge = 'standart';
-  //     }
-  //   } else if (i === 1) {
-  //     if ($option === 'more1h' || $option === 'less1h') {
-  //       auto = 'autocharger';
-  //     }
-  //   } else if (i === 2) {
-  //     if ($option !== 'static') {
-  //       pb = 'powerbank';
-  //     }
-  //   } else if (i === 3) {
-  //     if ($option === 'white') {
-  //       charge += 'white';
-  //       if (auto) {
-  //         auto += 'white';
-  //       }
-  //     } else {
-  //       charge += 'black';
-  //       if (auto) {
-  //         auto += 'black';
-  //       }
-  //     }
-  //   }
-  // }
-
-  // function processResult() {
-  //   if (i !== $slides.length - 2) {
-  //     $body.addClass('q' + (i + 2));
-  //   } else {
-  //     $body.addClass('q-result');
-  
-  //     var surveyTimer = $('.slide .timer');
-  
-  //     surveyTimer.countdown({
-  //       until: '+10m',
-  //       format: 'MS',
-  //       description: ':'
-  //     })
-  
-  //     var $selected = $('.option.selected');
-  //     var charger;
-  //     var powerbank;
-  //     var autocharger;
-  //     // $selected.each(function() {
-  //     //   analyzeData(i, charger, autocharger, powerbank)
-  //     // });
-  //     $selected.each(function (i) {
-  //       var $option = $(this).attr('data-option');
-  
-  //       if ($option === 'often') {
-  //         charger = 'fantasy';
-  //       } else if ($option === 'moderately' || $option === 'rarely') {
-  //         charger = 'standart';
-  //       }
-  //       if ($option === 'more1h' || $option === 'less1h') {
-  //         autocharger = 'autocharger';
-  //       }
-  //       if ($option === 'inmotion' || $option === 'differently') {
-  //         powerbank = 'powerbank';
-  //       }
-  //       if ($option === 'white') {
-  //         charger += 'white';
-  //         if (autocharger) {
-  //           autocharger += 'white';
-  //         }
-  //       } else if ($option === 'black') {
-  //         charger += 'black';
-  //         if (autocharger) {
-  //           autocharger += 'black';
-  //         }
-  //       }
-  //     })
-  //     console.log(charger);
-  //     console.log(autocharger);
-  //     console.log(powerbank);
-  
-  //     if (charger.indexOf('standart') >= 0) {
-  //       if (charger.indexOf('white') >= 0) {
-  //         appender(standart, 'white');
-  //       } else {
-  //         appender(standart, 'black');
-  //       }
-  //       // $('.slide .regular-cost').text(products.chargers.lunaStandart.regularPrice + ' грн');
-  //     } else {
-  //       if (charger.indexOf('white') >= 0) {
-  //         appender(fantasy, 'white');
-  //       } else {
-  //         appender(fantasy, 'black');
-  //       }
-  //     }
-  
-  //     if (autocharger && powerbank) {
-  //       appender(pb);
-  //       if (autocharger.indexOf('white') >= 0) {
-  //         appender(auto, 'white');
-  //       } else {
-  //         appender(auto, 'black');
-  //       }
-  //       if (charger.indexOf('standart') >= 0) {
-  //         costAdjust('standartWPowerbankAutocharger');
-  //       } else {
-  //         costAdjust('fantasyWPowerbankAutocharger');
-  //       }
-  //     } else if (autocharger) {
-  //       if (autocharger.indexOf('white') >= 0) {
-  //         appender(auto, 'white');
-  //       } else {
-  //         appender(auto, 'black');
-  //       }
-  //       if (charger.indexOf('standart') >= 0) {
-  //         costAdjust('standartWAutocharger');
-  //       } else {
-  //         costAdjust('fantasyWAutocharger');
-  //       }
-  //     } else if (powerbank) {
-  //       appender(pb);
-  //       if (charger.indexOf('standart') >= 0) {
-  //         costAdjust('standartWPowerbank');
-  //       } else {
-  //         costAdjust('fantasyWPowerbank');
-  //       }
-  //     } else {
-  //       if (charger.indexOf('standart') >= 0) {
-  //         costAdjust(standart, false);
-  //       } else {
-  //         costAdjust(fantasy, false);
-  //       }
-  //     }
-  //   }
-  // }
-
   $slides.each(function (i) {
     $this = $(this);
     $next = $this.find($btnNext);
@@ -322,13 +179,11 @@ $(document).ready(function () {
       trigger: "manual"
     }, 'hide');
     $next.on('click', function () {
-      // console.log($slides.eq(i).has('.option.selected').length);
       if ($slides.eq(i).has('.option.selected').length > 0) {
         fadeSlide($slides.eq(i), $slides.eq(i + 1));
         $body.removeClass('q' + (i + 1));
         $(this).tooltip("hide");
 
-        // processResult();
         $('body, html').stop().animate({
           scrollTop: 0
         }, 100);
@@ -355,9 +210,6 @@ $(document).ready(function () {
           var powerbank;
           var autocharger;
           var textToSend;
-          // $selected.each(function() {
-          //   analyzeData(i, charger, autocharger, powerbank)
-          // });
           $selected.each(function (i) {
             var $option = $(this).attr('data-option');
 
@@ -384,9 +236,6 @@ $(document).ready(function () {
               }
             }
           })
-          // console.log(charger);
-          // console.log(autocharger);
-          // console.log(powerbank);
 
           if (charger.indexOf('standart') >= 0) {
             if (charger.indexOf('white') >= 0) {
@@ -456,9 +305,4 @@ $(document).ready(function () {
       }
     })
   });
-
-  // $selected.each(function(i) {
-  //   var $options = $(this).attr('data-option');
-  //   console.log($options);
-  // })
 });
