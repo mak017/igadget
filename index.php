@@ -918,7 +918,7 @@ $_SESSION['utms']['utm_campaign'] = $_GET['utm_campaign'];
 							<div class="item">
 								<div class="row">
 									<div class="col-sm-12 text-center">
-										<img id="powerbank3" src="phones/powerbank_3.png">
+										<img id="powerbank3" src="phones/powerbank-black-1-min.png">
 									</div>
 								</div>
 							</div>
@@ -927,7 +927,7 @@ $_SESSION['utms']['utm_campaign'] = $_GET['utm_campaign'];
 							<div class="item">
 								<div class="row">
 									<div class="col-sm-12 text-center">
-										<img id="powerbank4" src="phones/powerbank_4.png">
+										<img id="powerbank4" src="phones/powerbank-black-2-min.png">
 									</div>
 								</div>
 							</div>
